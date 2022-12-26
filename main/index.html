@@ -9,7 +9,9 @@
     <title>Dulce Tentacion</title>
 </head>
 <body>
-    <header>
+
+    <!-- Inicio del codigo de la barra de navegacion-->
+    <header id = "barra">
         <div class="interior">
             <a href="../main/index.html" class = "logo"> <img src="../muffin.png" alt=""></a>
             <nav class="navegacion">
@@ -29,6 +31,21 @@
         </div>
     </header>
 
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("barra");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    <!-- Fin del codigo de la barra de navegacion -->
     <div class="overlay">
         <div class="texto-overlay">
             <p class = "cursiva"> Bienvenido a </p>

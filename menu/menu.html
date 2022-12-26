@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Barra de navegacion-->
-    <header>
+    <header id = "barra">
         <div class="interior">
             <a href="../main/index.html" class = "logo"> <img src="../muffin.png" alt=""></a>
             <nav class="navegacion">
@@ -29,6 +29,23 @@
             </nav>
         </div>
     </header>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("barra");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+
     <!-- Fin de la barra de navegacion-->
 
     <div class="overlay">
