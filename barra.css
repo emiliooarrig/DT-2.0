@@ -19,7 +19,9 @@ header{
     padding: 0 10px;
     margin: auto;
 }
-
+.navegacion a{
+    text-decoration: none;
+}
 .logo{
     float: left; 
     padding: 5px 20px 0;

@@ -9,7 +9,6 @@ body{
     font-style: italic;
 }
 
-
 .overlay{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #a2d2ff;
@@ -20,34 +19,40 @@ body{
 }
 /*Fin del CSS del header*/
 
-/*Inicio del css del bloque de instagram*/
-.bloqueInstagram{
-    position: relative;
-    background: #ffc8dd; 
-    width: 800px;
-    top: 0;
-    left: 25%;
-    padding: 20px 20px;
-}
 .FormatoBloque{
-    display: grid;
-    place-items: center;
     padding: 20px 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-align: justify;
+    /*Agregamos las 2 lineas de abajo para poder centrar los elementos dentro de cada 
+    bloque*/
+    display: grid;
+    place-items: center;
+}
+h2{
+    margin-bottom: 20px;
+}
+/*Inicio del css del bloque de instagram*/
+.bloqueInstagram{
+    background: #ffc8dd; 
+    width: 45%;
+    padding: 20px 20px;
+    margin: 0 auto;
 }
 /*Fin del bloque CSS del texto de instagram*/
-
 
 /*css de los botones*/
 .Boton{
    background: #bde0fe; 
    color: #000; 
    text-decoration: none;
+   text-align: center;
    padding: 25px 25px;
    border-radius: 20px;
    margin-top: 20px;
+   width: 100px;
+   display: inline-block;
+   margin-top: 5%;
 }
 
 .Boton:hover{
@@ -58,20 +63,17 @@ body{
 
 /*Inicio del css del bloque de email*/
 
+/*Css de los demás bloques*/
 .bloqueCorreo{
-    position: relative;
+    margin: 0 auto;
     background: #ffafcc; 
-    width: 800px;
-    top: 0;
-    left: 25%;
+    width: 45%;
     padding: 20px 20px;
 }
 
 .bloqueWhatsApp{
-    position: relative;
+    margin: 0 auto;
     background: #a2d2ff;
-    width: 800px;
-    top: 0;
-    left: 25%;
+    width: 45%;
     padding: 20px 20px;
 }
