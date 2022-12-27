@@ -46,6 +46,11 @@ body{
     vertical-align: top;
 }
 
+.Post:hover{
+    transform: scale(1.1);
+    transition: .3s linear;
+}
+
 .seccion{
     height: auto;
     width: 100%;

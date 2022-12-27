@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,24 @@
     <link rel="stylesheet" href="../barra.css">
     <title> Menu </title>
 </head>
+
 <body>
     <!-- Barra de navegacion-->
-    <header id = "barra">
+    <header id="barra">
         <div class="interior">
-            <a href="../main/index.html" class = "logo"> <img src="../muffin.png" alt=""></a>
+            <a href="../main/index.html" class="logo"> <img src="../muffin.png" alt=""></a>
             <nav class="navegacion">
                 <ul>
                     <li><a href="../main/index.html">Inicio </a></li>
                     <li class="submenu">
                         <a href="../menu/menu.html"> Productos </a>
                         <ul class="hijos">
-                            <li><a href=""> Item 1</a></li>
-                            <li><a href=""> Item 2</a></li>
-                            <li><a href=""> Item 3</a></li>
+                            <li><a href="#div-panques"> Panques </a></li>
+                            <li><a href="#div-cupcakes"> Cupcakes </a></li>
+                            <li><a href="#div-pasteles"> Pasteles </a></li>
+                            <li> <a href="#div-chocolates"> Chocolate </a></li>
+                            <li> <a href="#div-galletas"> Galletas </a></li>
+                            <li> <a href="#div-otros"> Adicionales </a></li>
                         </ul>
                     </li>
                     <li><a href="../contacto/contacto.html"> Contacto </a></li>
@@ -35,81 +40,143 @@
 
     <div class="overlay">
         <h1> Menu general </h1>
-        <p class = "cursiva"> ¡Echale un vistazo a los deliciosos postres que tenemos preparados para ti! </p>
+        <p class="cursiva"> ¡Echale un vistazo a los deliciosos postres que tenemos preparados para ti! </p>
     </div>
 
     <!-- Inicio de la seccion de panques-->
-    <div class = "seccion panques">
+    <div class="seccion panques" id = "div-panques">
 
-        <h2 class = "titulos"> Panques: </h2>
-        <div class="Post fresas">
-            <h4> Fresas cubiertas!</h4>
-            <img src="" alt="" class = "fotos-posts">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio voluptatem ducimus molestias, cumque architecto debitis, 
-                ratione, esse aliquid tempore quas? Laudantium dolor est nesciunt labore, eos voluptates nulla saepe?
-            </p>
-            <h4 class = "precio"> Precio: $ 540</h4>
-        </div>
+        <h2 class="titulos"> Panques </h2>
 
         <div class="Post panque">
             <h4> Panque de naranja </h4>
-            <img src="">
+            <img src="" class="formatoImagen">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi autem consectetur distinctio culpa tenetur fugit, 
-                voluptate ad, incidunt animi, ab ipsam. Fugiat distinctio voluptatem minima praesentium nemo error reprehenderit est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi autem consectetur distinctio culpa
+                tenetur fugit,
+                voluptate ad, incidunt animi, ab ipsam. Fugiat distinctio voluptatem minima praesentium nemo error
+                reprehenderit est!
             </p>
-            <h4 class = "precio"> Precio: </h4>
+            <h4 class="precio"> Precio: </h4>
         </div>
 
-        <div class="Post CupcakeNaranja">
-            <h4>  Cupcake de Naranja </h4>
-            <img src="" alt="">
+        <div class="Post">
+            <h4> Panque de Nuez </h4>
+            <img src="" alt="" class="formatoImagen">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio adipisci molestias aut iste architecto voluptas reiciendis debitis. Animi, laborum sunt. Quis, 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quos dolorum blanditiis officiis
+                architecto quam error adipisci ipsum quod officia,
+                vero itaque accusantium culpa repellat aliquid voluptatibus facere a atque?
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post">
+            <h4> Panque de Moras </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est sed aperiam facilis quasi
+                distinctio eius eum id illo
+                officiis enim saepe modi accusamus ut, deleniti mollitia consequatur? Mollitia, dolor?
+            </p>
+            <h4 class="precio"> Precio: </h4>
+        </div>
+    </div>
+    <!-- Fin de la seccion de panques -->
+
+    <!-- Inicio de la seccion de cupcakes -->
+    <div class="seccion Cupcakes" id = "div-cupcakes">
+        <h2 class="titulos"> Cupcakes </h2>
+
+        <div class="Post CupcakeNaranja">
+            <h4> Cupcake de Naranja </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio adipisci molestias aut iste architecto
+                voluptas reiciendis debitis. Animi, laborum sunt. Quis,
                 fugiat? Totam voluptatem ad deleniti fugit quisquam optio a?
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post MuffinMoras">
+            <h4> Muffin de moras </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis, eaque repudiandae quod
+                explicabo id quis dolore voluptatibus cupiditate cumque,
+                temporibus, rerum minima odit et? Enim amet eaque mollitia molestias?
             </p>
             <h4 class="precio">Precio: </h4>
         </div>
 
         <div class="Post CupcakeRedVelvet">
             <h4> Cupcake de Red Velvet </h4>
-            <img src="" alt="" class = "formatoImagen">
+            <img src="" alt="" class="formatoImagen">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam rerum numquam inventore dolores qui temporibus delectus ipsum saepe obcaecati quia, 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam rerum numquam inventore dolores
+                qui temporibus delectus ipsum saepe obcaecati quia,
                 recusandae perspiciatis illum laudantium aperiam. Ipsum inventore veniam suscipit.
             </p>
             <h4 class="precio"> Precio: </h4>
         </div>
 
-        <div class="Post">
-
+        <div class="Post CupcakeZanahoria">
+            <h4> Cupcake de Zanahoria </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias quasi sint, et quos officia
+                excepturi.
+                Sequi blanditiis veritatis aut eius mollitia repellat. Soluta in voluptatem magni velit. Blanditiis,
+                dolorem!
+            </p>
+            <h4 class="precio">Precio: </h4>
         </div>
+
+
+
     </div>
-    <!-- Fin de la seccion de panques -->
+    <!-- Fin de la seccion de cupcakes-->
 
     <!-- Inicio de la seccion de pasteles -->
-    <div class = "seccion pasteles">
+    <div class="seccion pasteles" id = "div-pasteles">
 
-        <h2 class = "titulos"> Pasteles </h2>
+        <h2 class="titulos"> Pasteles </h2>
+
         <div class="Post RedVelvet">
             <h4> Pastel de Red Velvet</h4>
-            <img src="" alt="">
+            <img src="" alt="" class="formatoImagen">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptas. Reprehenderit minima magni ea obcaecati rerum, 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptas. Reprehenderit minima magni
+                ea obcaecati rerum,
                 ipsa, vero, ipsam labore minus nam nihil rem id facere quas quidem dolorum culpa.
             </p>
             <h4> Precio: </h4>
         </div>
+
+        <div class="Post Zanahoria">
+            <h4> Pastel de Zanahoria </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Harum et explicabo iste magnam vitae maiores recusandae molestiae inventore corrupti necessitatibus
+                atque vel animi perferendis, aliquam nostrum non deleniti ex vero.
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
     </div>
-    <div class="seccion Chocolates">
-        <h2 class = "titulos"> Productos con chocolate </h2>
+    <!-- Fin de la seccion de pasteles -->
+
+    <!-- Inicio de la seccion de chocolates-->
+    <div class="seccion Chocolates" id = "div-chocolates">
+        <h2 class="titulos"> Productos con chocolate </h2>
         <div class="Post">
             <h4> Chocolate de Ciruela Pasa </h4>
             <img src="" alt="" class="formatoImagen">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Iusto atque qui earum quam sapiente alias delectus, necessitatibus dolores voluptatibus animi placeat quo eveniet commodi? Quae minus libero eius eos ab!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto atque qui earum quam sapiente alias delectus, necessitatibus dolores voluptatibus animi placeat
+                quo eveniet commodi? Quae minus libero eius eos ab!
             </p>
             <h4 class="precio"> Precio: </h4>
         </div>
@@ -117,26 +184,158 @@
         <div class="Post">
             <h4> Bombas de chocolate </h2>
                 <img src="" alt="Bombas de chocolate! " class="formatoImagen">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorem odit maxime perferendis consequatur, praesentium vel numquam, illo eos enim similique tenetur, 
-                fuga quisquam officia recusandae quibusdam ipsum magnam quasi!
-            </p>
-            <h4 class="precio"> Precio</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolorem odit maxime perferendis
+                    consequatur, praesentium vel numquam, illo eos enim similique tenetur,
+                    fuga quisquam officia recusandae quibusdam ipsum magnam quasi!
+                </p>
+                <h4 class="precio"> Precio</h4>
         </div>
+
+        <div class="Post">
+            <h4> Brownie de chocolate </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi inventore vitae placeat. Et
+                laudantium, tempora quam iusto totam earum adipisci illum animi,
+                perferendis suscipit eveniet sit quia fugiat vitae.
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post">
+            <h4> Cerezas con chocolate </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem obcaecati eos soluta
+                sapiente sint voluptatem deserunt at quas illo.
+                Praesentium, quo fugiat nesciunt maiores ullam vel rem quam obcaecati.
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post Pretzel">
+            <h4> Pretzel con chocolate blanco </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur voluptatibus reprehenderit cum
+                nulla, sequi corporis corrupti dolor,
+                nihil quos repudiandae tempora dolorum sit dicta delectus vitae tenetur blanditiis. Necessitatibus!
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post tarroChocolate">
+            <h4> Tarro con chocolates de ciruela con nuez </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero praesentium nesciunt vitae odio numquam temporibus, voluptate eum modi? Eum omnis aspernatur,
+                deserunt sed ratione soluta? Quidem dolor atque itaque delectus.
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
     </div>
-    <!-- Fin de la seccion de pasteles -->
-    
-    <div class = "seccion otros">
+    <!-- Fin de la seccion de chocolates -->
+
+    <!-- Inicio de la seccion de galletas -->
+
+    <div class="seccion Galletas" id = "div-galletas">
         <h2 class="titulos"> Galletas </h2>
+
         <div class="Post">
             <h4> Galletas con chispas de chocolate </h4>
             <img src="" alt="" class="formatoImagen">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et commodi ipsam molestias sunt, dolorem placeat est recusandae odio laborum soluta quisquam deserunt harum sint 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et commodi ipsam molestias sunt, dolorem
+                placeat est recusandae odio laborum soluta quisquam deserunt harum sint
                 laudantium tempora incidunt cupiditate quam?
             </p>
             <h4 class="precio"> Precio: </h4>
         </div>
+
+        <div class="Post Nuez">
+            <h4> Galletas de nuez </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perferendis aliquam, harum quod maxime
+                impedit. Necessitatibus
+                expedita exercitationem libero ea harum accusantium in vero repellendus alias itaque explicabo,
+                distinctio ipsum?
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post Almendra">
+            <h4> Galletas de nuez con harina de almendra </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dignissimos praesentium ad quasi ut non
+                magnam expedita
+                blanditiis voluptatibus maiores quis animi corporis, pariatur cum sapiente aliquid quod. Qui,
+                asperiores.
+            </p>
+            <h4 class="precio"> Precio: </h4>
+        </div>
+
+        <div class="Post BesosGalleta">
+            <h4> Besos de nuez con azucar glass </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo quam quo maiores hic eligendi, rem
+                molestiae provident recusandae reprehenderit culpa esse nihil nesciunt,
+                animi iste enim nisi veniam sed.
+            </p>
+            <h4 class="precios">Precio: </h4>
+
+        </div>
+
+
     </div>
+    <!-- Inicio de la seccion de otros -->
+    <div class="seccion otros" id = "div-otros">
+        <h2 class="titulos"> Adicionales </h2>
+
+        <div class="Post fresas">
+            <h4> Fresas cubiertas!</h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio voluptatem ducimus molestias, cumque
+                architecto debitis,
+                ratione, esse aliquid tempore quas? Laudantium dolor est nesciunt labore, eos voluptates nulla saepe?
+            </p>
+            <h4 class="precio"> Precio: $ 540</h4>
+        </div>
+
+        <div class="Post Pay">
+            <h4> Pay de queso</h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae molestias tempore itaque,
+                fugiat quos consectetur commodi
+                aliquam praesentium ut. Dolorem tempora earum aliquam nisi minus similique illum repellendus ipsum.
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+        <div class="Post Flan">
+            <h4> Flan napolitano </h4>
+            <img src="" alt="" class="formatoImagen">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore consequuntur quo tempora sapiente!
+                Commodi quod aperiam ad atque soluta necessitatibus illum recusandae esse! Exercitationem tempora,
+                nesciunt ab error sequi veniam.
+            </p>
+            <h4 class="precio">Precio: </h4>
+        </div>
+
+
+
+
+    </div>
+    <!-- Fin de la secccion de otros-->
+
 </body>
+
 </html>
