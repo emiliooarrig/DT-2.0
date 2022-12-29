@@ -8,8 +8,9 @@ body{
 .precio{
     background: white;
     width: fit-content;
+    height: auto;
     border-radius: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .titulos{
@@ -65,5 +66,5 @@ body{
     width: 70%;
     height: 40%;
     margin: 20px ;
-    border: 5px inset #cdb4db;
+    border: 5px solid #cdb4db;
 }
