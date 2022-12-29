@@ -80,4 +80,25 @@ body{
         border-left: 10px solid #cdb4db ;
     }
 
+    .Post{
+        padding: 15px 15px;
+        margin: 15px 20px;
+        font-size: 14px;
+        width: 300px;
+        height:410px;
+    }
+
+    .precio{
+        margin-top: 10px;
+    }
+    .listaPrecios{
+        font-size: 14px;
+    }
+
+    .formatoImagen{
+        width: 50%;
+        height: 40%;
+        display: block;
+        
+    }
 }
