@@ -38,21 +38,32 @@ body{
     padding: 20px 20px;
     margin: 20px 40px;
     width: 350px;
-    height: 200px;
+    height: 410px;
     text-align: justify;
     /*usamos esta linea de codigo para convertir los elementos div en componentes lineales, 
     para que así se posicionen uno a lado del otro*/
     display: inline-block; 
     vertical-align: top;
+    font-size: 16px;
 }
 
-.Post:hover{
+/*.Post:hover{
     transform: scale(1.1);
     transition: .3s linear;
-}
+}*/
 
 .seccion{
     height: auto;
     width: 100%;
 }
 
+.listaPrecios{
+    padding: 20px 20px;
+}
+
+.formatoImagen{
+    width: 70%;
+    height: 40%;
+    margin: 20px ;
+    border: 5px inset #cdb4db;
+}
