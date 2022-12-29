@@ -98,3 +98,56 @@ header{
 .navegacion .submenu .hijos li a{
     display: block;
 }
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+      display: block;  
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background: #ffc8dd;
+        top: 90px;
+        left: -110%; 
+        transition: all .5s; 
+        display: inline-block;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    ul .submenu .hijos:hover{
+        margin: 5px 5px;
+    }
+
+    li a:hover, li a.activate{
+        background: none;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}

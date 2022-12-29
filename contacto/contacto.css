@@ -35,7 +35,7 @@ h2{
 /*Inicio del css del bloque de instagram*/
 .bloqueInstagram{
     background: #ffc8dd; 
-    width: 45%;
+    width: 90%;
     padding: 20px 20px;
     margin: 0 auto;
 }
@@ -67,13 +67,29 @@ h2{
 .bloqueCorreo{
     margin: 0 auto;
     background: #ffafcc; 
-    width: 45%;
+    width: 90%;
     padding: 20px 20px;
 }
 
 .bloqueWhatsApp{
     margin: 0 auto;
     background: #a2d2ff;
-    width: 45%;
+    width: 90%;
     padding: 20px 20px;
+}
+
+@media (max-width: 700px){
+    
+    .overlay{
+        font-size: 25px;
+        padding: 40px;
+    }
+
+    .FormatoBloque{
+        font-size: 18px;
+    }
+
+    .Boton{
+        padding: 20px 20px;
+    }
 }

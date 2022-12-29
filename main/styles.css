@@ -18,7 +18,7 @@ body{
     padding: 14px 16px;
     height: 350px;
     background-size: cover;
-    background-position: 60px;
+    background-position: 0;
 }
 
 .texto-overlay{
@@ -103,7 +103,7 @@ body{
     place-items: center;
     background: url(img/pexels-negative-space-33999.jpg);
     height: 300px;
-    background-position: 80px;
+    background-position: 60px;
 }
 
 .contacto{ /*BOTON*/
@@ -119,6 +119,27 @@ body{
     background: #ff1040;
     transform: scale(1.1);
     transition: .3s linear;
+}
+
+@media (max-width: 700px){
+
+    .principal .menu .Contacto{
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .texto-overlay{
+        font-size: 25px
+    }
+
+    .overlay{
+        background-position: 0;
+    }
+
+    .Contacto{
+        background-position: 36px;
+    }
 }
 
 /*Fin del codigo del div de contacto*/

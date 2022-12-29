@@ -8,3 +8,9 @@ footer{
     color: #000;
     padding: 50px 50px;
 }
+
+@media (max-width: 700px){
+    .linea{
+        font-size: 15px;
+    }
+}
