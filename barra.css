@@ -150,4 +150,12 @@ header{
         left: 0;
     }
 
+    .logo img{
+        height: 50px;
+    }
+    .logo{
+        float: left;
+        margin-top: 20px;   
+    }
+
 }
