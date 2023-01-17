@@ -117,6 +117,10 @@ header{
       display: block;  
     }
 
+    .navegacion ul li:hover .hijos{
+        display: none;
+    }
+
     ul{
         position: fixed;
         width: 100%;
@@ -126,7 +130,9 @@ header{
         top: 90px;
         left: -110%; 
         transition: all .5s; 
-        display: inline-block;
+        /*Agregamos el display de grid para poder alinear los elementos de la lista*/
+        display: grid;
+        grid-template-rows: repeat(4,90px);
     }
 
     nav ul li{
@@ -134,6 +140,7 @@ header{
         margin: 50px 0;
         line-height: 30px;
     }
+
     nav ul li a{
         font-size: 20px;
     }
