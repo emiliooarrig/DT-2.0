@@ -147,6 +147,10 @@ body{
     .Contacto{
         background-position: 36px;
     }
+
+    .texto-overlay p{
+        margin-top: 15px;
+    }
 }
 
 /*Fin del codigo del div de contacto*/
