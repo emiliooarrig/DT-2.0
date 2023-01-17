@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a2d2ff;
+    padding: 50px;
+    font-size: 30px;
+}
