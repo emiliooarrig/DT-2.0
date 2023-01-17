@@ -13,7 +13,6 @@ body{
 /*Configuracion del div del titulo*/
 .overlay{
     background: url(img/pexels-lukas-616358.jpg);
-    text-align: center;
     font-size: 20px;
     padding: 14px 16px;
     height: 350px;
@@ -29,6 +28,10 @@ body{
     text-align: center;
 	color: black;
 	text-shadow: 1px 1px 1px #333;
+}
+
+.texto-overlay p{
+    margin-top: 30px;
 }
 
 .cursiva{
