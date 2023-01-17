@@ -53,6 +53,7 @@ h2{
    width: 100px;
    display: inline-block;
    margin-top: 5%;
+   transition: .3s linear;
 }
 
 .Boton:hover{
