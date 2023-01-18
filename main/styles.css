@@ -65,7 +65,6 @@ body{
     transition: .3s linear;
 }
 
-
 .Principal{
     font-size: 30px;
     display: inline-block;
@@ -73,6 +72,7 @@ body{
     text-decoration: none;
     color: black;
     padding: 20px 20px;
+    transition: .3s linear;
 }
 
 /*Programacion css del boton menu*/
@@ -91,6 +91,7 @@ body{
     text-decoration: none;
     color: black;
     padding: 20px 20px;
+    transition: .3s linear;
 }
 
 .Menu:hover{
@@ -117,6 +118,7 @@ body{
     text-decoration: none;
     color: black;
     padding: 20px 20px;
+    transition: .3s linear;
 }
 
 .contacto:hover{
@@ -145,7 +147,7 @@ body{
     }
 
     .Contacto{
-        background-position: 36px;
+        background-position: -550px;
     }
 
     .texto-overlay p{
