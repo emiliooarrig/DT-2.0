@@ -6,14 +6,29 @@
 
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    background: url(../contacto/img/watercolor.png);
 }
 
 .portada{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #a2d2ff;
     padding: 50px;
     font-size: 30px;
+}
+
+.galeria{
+    width: 100%;
+}
+.imagen{
+    border: 5px solid slateblue;
+    display: inline-block;
+    margin: 15px;
+    height: 260px;
+}
+
+.formato-foto{
+    height: 250px;
 }
