@@ -21,11 +21,13 @@ header{
     background-color: #a2d2ff;
     padding: 50px;
     font-size: 30px;
+    margin-bottom: 60px;
 }
 
-/* Slideshow container */
+/* CSS DEL CARRUSEL --> Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    width: 500px;
     position: relative;
     margin: auto;
   }
@@ -36,12 +38,12 @@ header{
   }
   
   .imagenesCarrusel{
-    height: fit-content;
+    max-height: 500px;
   }
 
   /* Next & previous buttons */
   .prev, .next {
-    cursor: pointer;
+    cursor: pointer; 
     position: absolute;
     top: 50%;
     width: auto;
@@ -111,4 +113,52 @@ header{
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+
+  /*Diseño de la galeria*/
+
+  .titulo-galeria{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .contenedor-galeria{
+    /*Alineamos los elementos del grid en medio*/
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #a2d2ff;
+    padding: 20px;
+  }
+
+  .imagenGaleria{
+    width: 650px;
+    max-height: 300px;
+    opacity: 0.8;
+    border: double #717171 3px;
+    transition: .3 ease;
+  }
+
+  .imagenGaleria:hover{
+    border: double black 3px;
+    transition: .3 ease; 
+    opacity: 1;
+  }
+
+  /*Fin del diseño de la galeria*/
+
+  /*Diseñe responsive de la pagina*/
+
+  @media(max-width: 700px){
+    .portada{
+      font-size: 15px;
+    }
+
+    /* Se quita la opacidad en diseño de dispositivos móviles */
+    .imagenGaleria{
+      opacity: 1;
+    }
   }
