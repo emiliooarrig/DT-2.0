@@ -161,4 +161,15 @@ body{
     }
 }
 
+@media (max-width: 500px){
+    .texto-overlay{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .Contacto{
+        background-position: -800px;
+    }
+}
+
 /*Fin del codigo del div de contacto*/
