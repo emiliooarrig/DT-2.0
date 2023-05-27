@@ -161,10 +161,14 @@ body{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 400px){
     .texto-overlay{
         font-size: 20px;
         padding: 20px;
+    }
+
+    .texto-overlay h1{
+        font-size: 30px;
     }
 
     .Contacto{
