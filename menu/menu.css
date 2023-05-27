@@ -85,7 +85,7 @@ body{
     border: 5px solid #cdb4db;
 }
 
-@media (max-width: 700px){
+@media (max-width: 450px){
     .overlay{
         height: 100px;
         font-size: 20px;
