@@ -1,8 +1,8 @@
 
 var misParrafos = document.getElementsByClassName("mas-vendido");
+var proximo = document.getElementById("proximamente")
 
 var colores = ["red", "blue", "green", "orange", "purple"];
-
 // Función para cambiar el color de los párrafos
 function cambiarColor() {
 
@@ -13,6 +13,7 @@ function cambiarColor() {
 
     // Asigna el color aleatorio al estilo de fondo del párrafo actual
     misParrafos[i].style.color = colores[colorAleatorio];
+    proximo.style.color = colores [colorAleatorio]
   }
 }
 
