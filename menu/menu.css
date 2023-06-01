@@ -85,6 +85,13 @@ body{
     border: 5px solid #cdb4db;
 }
 
+.proximamente{
+    font-size: 40px;
+    margin-top: 30px;
+    transition: .3s linear;
+}
+
+
 @media (max-width: 450px){
     .overlay{
         height: 100px;
@@ -117,5 +124,9 @@ body{
         height: 40%;
         display: block;
         
+    }
+
+    .proximamente{
+        font-size: 30px;
     }
 }
