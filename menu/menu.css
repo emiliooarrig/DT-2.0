@@ -116,14 +116,8 @@ body{
         margin-top: 10px;
     }
     .listaPrecios{
+        list-style: none;
         font-size: 14px;
-    }
-
-    .formatoImagen{
-        width: 50%;
-        height: 40%;
-        display: block;
-        
     }
 
     .proximamente{
