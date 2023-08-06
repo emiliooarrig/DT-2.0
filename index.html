@@ -19,8 +19,8 @@
         <div class="interior">
             <a href="index.html" class="logo"> <img src="main/img/muffin.png" alt=""></a>
             <nav class="navegacion">
-                <input type="checkbox" id = "check">
-                <label for="check" class = "checkbtn">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 <ul>
@@ -48,14 +48,14 @@
         <div class="overlay">
             <div class="texto-overlay">
                 <p class="cursiva"> Bienvenido a </p>
-                <h1> Dulce Tentacion </h1> 
+                <h1> Dulce Tentacion </h1>
                 <p> Bienvenidos al sitio web de Dulce Tentacion! </p>
             </div>
         </div>
 
         <!-- Seccion de los botones-->
         <div class=" principal">
-            <a href="index.html" class="Boton Principal redondeo"> Menu principal </a>
+            <a href="index.html" id="BotonPrincipal" class="Boton Principal redondeo"> Menu principal </a>
         </div>
 
         <div class=" menu">
@@ -67,11 +67,25 @@
         </div>
     </div>
 
-    <footer class = "pie-pagina">
-        <div class = "linea">
+    <footer class="pie-pagina">
+        <div class="linea">
             <h2> Dulce Tentacion. &#169; Todos los derechos reservados.</h2>
         </div>
     </footer>
+
+    <script>
+        const alerta = document.getElementById("BotonPrincipal");
+
+        alerta.addEventListener('click', function (event) {
+            // Evitamos que el enlace redireccione a otra página (opcional)
+            event.preventDefault();
+
+            // Mostramos la alerta
+            alert('Estas en el menu principal');
+        });
+
+
+    </script>
 
 </body>
 
