@@ -76,6 +76,8 @@ body{
 
 .listaPrecios{
     padding: 20px 20px;
+    list-style: none;
+    font-weight: bold;
 }
 
 .formatoImagen{
