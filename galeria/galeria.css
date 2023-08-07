@@ -1,164 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: url(../contacto/img/watercolor.png);
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: url(../contacto/img/watercolor.png);
 }
 
-header{
-    position: relative !important;
+header {
+  position: relative !important;
 }
 
-.portada{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #a2d2ff;
-    padding: 50px;
-    font-size: 30px;
-    margin-bottom: 60px;
+.portada {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a2d2ff;
+  padding: 50px;
+  font-size: 30px;
+  margin-bottom: 60px;
 }
 
-/* CSS DEL CARRUSEL --> Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    width: 500px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  .imagenesCarrusel{
-    max-height: 500px;
-  }
+/*Diseño de la galeria*/
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer; 
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+.titulo-galeria {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.contenedor-galeria {
+  /*Alineamos los elementos en medio*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.imagenGaleria {
+  width: 350px;
+  height: 350px;
+  border: double #717171 3px;
+  transition: .3 ease;
+  margin: 20px;
+}
+
+.imagenGaleria:hover {
+  border: double black 3px;
+  transition: .3 ease;
+  opacity: 1;
+}
+
+/*Fin del diseño de la galeria*/
+
+/*Diseñe responsive de la pagina*/
 
 
-  /*Diseño de la galeria*/
+@media (max-width: 800px){
+  .imagenGaleria{
+    margin: 10px;
+  }
+}
 
+@media(max-width: 430px) {
+  
   .titulo-galeria{
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    font-size: 25px;
+    margin-top: 20px;
   }
-  .contenedor-galeria{
-    /*Alineamos los elementos del grid en medio*/
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    background-color: #a2d2ff;
-    padding: 20px;
+  .portada{
+    font-size: 15px;
   }
 
   .imagenGaleria{
-    width: 650px;
-    max-height: 300px;
-    opacity: 0.8;
-    border: double #717171 3px;
-    transition: .3 ease;
+    height: 300px;
+    width: 300px;
+    margin-left: 60px; /*ARREGLAR*/
   }
-
-  .imagenGaleria:hover{
-    border: double black 3px;
-    transition: .3 ease; 
-    opacity: 1;
-  }
-
-  /*Fin del diseño de la galeria*/
-
-  /*Diseñe responsive de la pagina*/
-
-  @media(max-width: 700px){
-    .portada{
-      font-size: 15px;
-    }
-
-    /* Se quita la opacidad en diseño de dispositivos móviles */
-    .imagenGaleria{
-      opacity: 1;
-    }
-  }
+}
