@@ -53,6 +53,7 @@ body{
 
 .principal{
     background: url(img/pexels-brigitte-tohm-239581.jpg);
+    background-size: cover;
     /*agregamos las 2 lineas de abajo para poder centrar todos los elementos dentro 
     del div*/
     display: grid;
@@ -81,6 +82,7 @@ body{
     display: grid;
     place-items: center;
     background: url(img/pexels-sydney-troxell-708488.jpg);
+    background-size: cover;
     background-position: 0;
     height: 300px;
 }
@@ -108,6 +110,7 @@ body{
     display: grid;
     place-items: center;
     background: url(img/pexels-negative-space-33999.jpg);
+    background-size: cover;
     height: 300px;
     background-position: 60px;
 }
