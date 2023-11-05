@@ -171,13 +171,13 @@ body{
         padding: 20px;
     }
 
+    .Contacto{
+        object-fit: cover;
+    }
     .texto-overlay h1{
         font-size: 30px;
     }
 
-    .Contacto{
-        background-position: -800px;
-    }
 }
 
 /*Fin del codigo del div de contacto*/
