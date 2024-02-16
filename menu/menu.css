@@ -40,13 +40,12 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px 20px;
     margin: 20px 40px;
-    width: 350px;
+    width: 15%;
     height: 410px;
     text-align: justify;
     /*usamos esta linea de codigo para convertir los elementos div en componentes lineales, 
     para que así se posicionen uno a lado del otro*/
     display: inline-block; 
-    vertical-align: top;
     font-size: 16px;
 }
 
@@ -58,14 +57,13 @@ body{
 }
 
 
-/*.Post:hover{
-    transform: scale(1.1);
-    transition: .3s linear;
-}*/
-
 .seccion{
     height: auto;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .listaPrecios{
@@ -88,12 +86,15 @@ body{
     margin: 15px 0;
 }
 
-.proximamente{
-    font-size: 40px;
-    margin-top: 30px;
-    transition: .3s linear;
-}
 
+@media(max-width: 1000px){
+    .seccion{
+        flex-direction: column;
+    }
+    .Post{
+        width: 50%;
+    }
+}
 
 @media (max-width: 450px){
     .overlay{
@@ -115,15 +116,17 @@ body{
         height:410px;
     }
 
+    .seccion{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .precio{
         margin-top: 10px;
     }
+
     .listaPrecios{
         list-style: none;
         font-size: 14px;
-    }
-
-    .proximamente{
-        font-size: 30px;
     }
 }
