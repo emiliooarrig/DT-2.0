@@ -4,13 +4,11 @@ body{
     background: url(img/watercolor.png);
 }
 
-/*Codigos a reutlizar*/
 .precio{
-    background: white;
     width: fit-content;
     height: auto;
     border-radius: 30px;
-    margin-top: 10px;
+    padding: 5px 0;
 }
 
 .titulos{
@@ -66,10 +64,13 @@ body{
     flex-direction: row;
 }
 
+
+
 .listaPrecios{
-    padding: 20px 20px;
+    padding: 10px;
     list-style: none;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .formatoImagen{
