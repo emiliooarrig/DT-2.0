@@ -24,17 +24,7 @@
                 </label>
                 <ul>
                     <li><a href="../index.html">Inicio </a></li>
-                    <li class="submenu">
-                        <a href="../menu/menu.html"> Productos </a>
-                        <ul class="hijos">
-                            <li><a href="#div-panques"> Panques </a></li>
-                            <li><a href="#div-cupcakes"> Cupcakes </a></li>
-                            <li><a href="#div-pasteles"> Pasteles </a></li>
-                            <li> <a href="#div-chocolates"> Chocolate </a></li>
-                            <li> <a href="#div-galletas"> Galletas </a></li>
-                            <li> <a href="#div-otros"> Adicionales </a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../menu/menu.html"> Productos </a></li>
                     <li><a href="../contacto/contacto.html"> Contacto </a></li>
                     <li><a href="../galeria/galeria.html"> Galeria </a></li>
                 </ul>
@@ -46,8 +36,7 @@
     <!-- Fin de la barra de navegacion-->
 
     <div class="overlay">
-        <h1> Menu general </h1>
-        <p class="cursiva"> ¿Qué se te antoja hoy? </p>
+        <h1 class="titulo-overlay"> Menu general </h1>
     </div>
 
     <!-- Inicio de la seccion de panques-->
@@ -60,11 +49,11 @@
             <div class="div-imagen">
                 <img src="img/panque-naranja.jpg" alt="panque de naranja" class="formatoImagen">
             </div>
-            <h3 class="mas-vendido" id="mas-vendido"> MAS VENDIDO</h3>
+            <h3 class="mas-vendido"> MAS VENDIDO</h3>
             <p>
                 Un delicioso panque hecho con jugo natural de Naranja. Contamos con 3 tamaños disponibles.
             </p>
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Grande: $270</li>
                 <li>Chico: $220</li>
                 <li> Rectagular: $170</li>
@@ -80,7 +69,7 @@
             <p>
                 Un delicioso panque hecho con nuez natural. Contamos con 3 tamaños disponibles
             </p>
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Grande: $280</li>
                 <li>Chico:$240 </li>
                 <li>Rectangular:$180</li>
@@ -92,10 +81,11 @@
             <div class="div-imagen">
                 <img src="img/moras-panque.jpg" class="formatoImagen">
             </div>
+            <!-- Empty badge placeholder or omit -->
             <p>
                 Un delicioso panque hecho con moras naturales. Contamos con un tamaño disponible
             </p>
-    
+
             <h4 class="precio"> Rectangular: $165</h4>
         </div>
     </div>
@@ -167,12 +157,13 @@
             <div class="div-imagen">
                 <img src="img/pastel-velvet.jpg" class="formatoImagen">
             </div>
+            <!-- Omitted badge placeholder if none -->
             <p>
                 Exquisito pastel de red velvet, ideal para compartir en familia. Se puede acompañar con decoraciones
                 para algun evento especial
             </p>
 
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Grande: $320</li>
                 <li>Chico:$280</li>
                 <li>Rectagular:$170</li>
@@ -188,7 +179,7 @@
                 Exquisito pastel hecho con zanahoria, ideal para compartir en pareja o familia. Acompañado de betún y
                 demás amenidades.
             </p>
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Grande: $320</li>
                 <li>Chico:$270</li>
                 <li>Rectagular:$180</li>
@@ -205,7 +196,7 @@
                 decorados con azucar glass.
             </p>
             <h5> NOTA: PEDIDO MINIMO DE 4 UNIDADES</h5>
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Naranja: $55</li>
                 <li>Zanahoria: $65</li>
             </ol>
@@ -229,16 +220,18 @@
         </div>
 
         <div class="Post bombas">
-            <h4> Paquete de bombas de chocolate (4 unidades) </h2>
-                <div class="div-imagen">
-                    <img src="img/bombas-nuevo.jpg" alt="Bombas de chocolate! " class="formatoImagen">
-                </div>
-                <p>
-                    Deliciosas bombas de chocolate, rellenas de bombones y chocolate abuelita en polvo. Contamos con
-                    diferentes presentaciones.
-                </p>
+            <h4> Paquete de bombas de chocolate </h4>
+            <!-- Removed (4 unidades) from h4 to keep clean, can be in p -->
+            <div class="div-imagen">
+                <img src="img/bombas-nuevo.jpg" alt="Bombas de chocolate!" class="formatoImagen">
+            </div>
+            <p>
+                (4 unidades) Deliciosas bombas de chocolate, rellenas de bombones y chocolate abuelita en polvo.
+                Contamos con
+                diferentes presentaciones.
+            </p>
 
-                <h4 class="precio"> Precio: $140</h4>
+            <h4 class="precio"> Precio: $140</h4>
 
         </div>
 
@@ -253,10 +246,7 @@
             <h4 class="precio">Precio:10 x $55</h4>
         </div>
 
-
-    </div>
-
-    <div class="seccion">
+        <!-- Merged pretzels here as product with chocolate -->
         <div class="Post Pretzel">
             <h4> Pretzel con chocolate blanco </h4>
             <div class="div-imagen">
@@ -353,7 +343,7 @@
                 alguna comida o evento social!
             </p>
 
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Grande: $275</li>
                 <li>Chico:$170 </li>
             </ol>
@@ -369,7 +359,7 @@
                 ¡Ideal para regalar!
             </p>
 
-            <ol class="listaPrecios precio">
+            <ol class="listaPrecios">
                 <li>Grande: $300</li>
                 <li>Chico:$190 </li>
             </ol>
@@ -386,10 +376,8 @@
             </p>
             <h4 class="precio">Precio: $180</h4>
         </div>
-    </div>
 
-    <div class="seccion 2">
-
+        <!-- Merged stray sections -->
         <div class="Post">
             <h4> Buñuelos </h4>
             <div class="div-imagen">
@@ -398,7 +386,7 @@
             <p>
                 Deliciosos buñuelos cubiertos con azucar, chocolate blanco y chocolate semi amargo
             </p>
-            <h4 class="precio"> Precio: $210 (24 unidadess)</h4>
+            <h4 class="precio"> Precio: $210 (24 unidades)</h4>
         </div>
 
         <div class="Post">
@@ -417,7 +405,7 @@
             <div class="div-imagen">
                 <img src="img/borrego-manzana.jpg" alt="panque de naranja" class="formatoImagen">
             </div>
-            <h3 class="mas-vendido" id="mas-vendido"> NUEVO </h3>
+            <h3 class="mas-vendido"> NUEVO </h3>
             <p>
                 ¡Borrego de la abundancia ideal para regalar! Hecho a base manzana verde, una cubierta de chocolate
                 blanco y bombones
@@ -430,23 +418,20 @@
             <div class="div-imagen">
                 <img src="img/borrego-manzana2jpg.jpg" alt="panque de naranja" class="formatoImagen">
             </div>
-            <h3 class="mas-vendido" id="mas-vendido"> NUEVO </h3>
+            <h3 class="mas-vendido"> NUEVO </h3>
             <p>
                 ¡Borrego de la abundancia ideal para regalar! Hecho a base manzana verde, con una cubierta de chocolate
                 blanco y bombones
             </p>
             <h4 class="precio">Precio: $90 </h4>
         </div>
-    </div>
-
-    <div class="seccion 3">
 
         <div class="Post">
             <h4> Mini donas </h4>
             <div class="div-imagen">
                 <img src="img/mini-donas.jpg" alt="panque de naranja" class="formatoImagen moverimg">
             </div>
-            <h3 class="mas-vendido" id="mas-vendido"> NUEVO </h3>
+            <h3 class="mas-vendido"> NUEVO </h3>
             <p>
                 ¡Paquete de mini donas cubiertas de chocolate! Pedido mínimo de 5 unidades
             </p>
@@ -458,37 +443,45 @@
             <div class="div-imagen">
                 <img src="img/mini-donas2.jpg" alt="panque de naranja" class="formatoImagen">
             </div>
-            <h3 class="mas-vendido" id="mas-vendido"> NUEVO </h3>
+            <h3 class="mas-vendido"> NUEVO </h3>
             <p>
                 ¡Brochetas de mini donas cubiertas de chocolate! Pedido mínimo de 5 unidades
             </p>
             <h4 class="precio">Precio: $30 c/u </h4>
-        </div>   
+        </div>
+
     </div>
-    
+
     </div>
 
     <!-- Fin de la secccion de otros-->
 
-    <!-- Inicio del footer de la pagina-->
     <footer class="pie-pagina">
-        <div class="linea">
-            <h2> Dulce Tentacion </h2>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../menu/menu.html">Productos</a></li>
-                <li><a href="../contacto/contacto.html">Contacto</a></li>
-                <li><a href="../galeria/galeria.html">Galeria</a></li>
-            </ul>
-        </div>
-
-        <div class="linea">
-            <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="footer-container">
+            <div class="footer-section brand">
+                <h2>Dulce Tentacion</h2>
+                <p>Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu/menu.html">Productos</a></li>
+                    <li><a href="contacto/contacto.html">Contacto</a></li>
+                    <li><a href="galeria/galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 Dulce Tentacion. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
-    <!-- Fin del footer de la pagina-->
 
 
     <!-- SCRIPT DE LAS ANIMACIONES PARA MEJOR VENDIDO.-->

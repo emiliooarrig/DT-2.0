@@ -17,27 +17,17 @@
     <!-- Inicio del codigo de la barra de navegacion-->
     <header>
         <div class="interior">
-            <a href="index.html" class="logo"> <img src="main/img/muffin.png" alt=""></a>
+            <a href="../index.html" class="logo"> <img src="../muffin.png" alt=""></a>
             <nav class="navegacion">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 <ul>
-                    <li><a href="index.html">Inicio </a></li>
-                    <li class="submenu">
-                        <a href="menu/menu.html"> Productos </a>
-                        <ul class="hijos">
-                            <li><a href="menu/menu.html"> Panques </a></li>
-                            <li><a href="menu/menu.html"> Cupcakes </a></li>
-                            <li><a href="menu/menu.html"> Pasteles </a></li>
-                            <li> <a href="menu/menu.html"> Chocolate </a></li>
-                            <li> <a href="menu/menu.html"> Galletas </a></li>
-                            <li> <a href="menu/menu.html"> Adicionales </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contacto/contacto.html"> Contacto </a></li>
-                    <li><a href="galeria/galeria.html"> Galeria </a></li>
+                    <li><a href="../index.html">Inicio </a></li>
+                    <li><a href="../menu/menu.html"> Productos </a></li>
+                    <li><a href="../contacto/contacto.html"> Contacto </a></li>
+                    <li><a href="../galeria/galeria.html"> Galeria </a></li>
                 </ul>
             </nav>
         </div>
@@ -45,45 +35,112 @@
 
     <!-- Fin del codigo de la barra de navegacion -->
     <div class="Seccion">
-        <div class="overlay">
-            <div class="texto-overlay">
-                <p class="cursiva"> Bienvenido a </p>
-                <h1> Dulce Tentacion </h1>
-                <p> Bienvenidos al sitio web de Dulce Tentacion! </p>
+        <!-- Seccion de los botones-->
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Momentos Dulces, Recuerdos Inolvidables</h2>
+                <p>
+                    Explora nuestra exquisita colección de repostería artesanal, hecha con amor y los mejores
+                    ingredientes.
+                </p>
+                <a href="galeria/galeria.html" id="BotonPrincipal" class="Boton Principal redondeo">
+                    Descubre Nuestra Galería
+                </a>
             </div>
         </div>
 
-        <!-- Seccion de los botones-->
-        <div class=" principal">
-            <a href="galeria/galeria.html" id="BotonPrincipal" class="Boton Principal redondeo"> Galeria </a>
-        </div>
-
         <div class=" menu">
-            <a href="menu/menu.html" class="Boton Menu redondeo"> Productos </a>
+            <div class="interior-menu">
+                <div class="img-menu">
+                    <img src="galeria/fotos/bombas-navidad3.jpg" alt="" class="img-menu">
+                </div>
+                <div class="presentacion-menu">
+                    <h3 class="titulo-menu"> ¿Quiénes Somos?</h3>
+                    <p>
+                        Dulce Tentacion es un lugar donde la creatividad y el arte se funden para crear un mundo de
+                        dulzura y encanto. Conoce nuestros productos y descubre la magia de la repostería artesanal.
+                    </p>
+                    <a href="menu/menu.html" class="Boton btn-menu redondeo"> Productos </a>
+                </div>
+            </div>
         </div>
 
-        <div class=" Contacto">
-            <a href="contacto/contacto.html" class="Boton contacto redondeo"> Contacto </a>
+        <div class="carousel-section">
+            <h3 class="titulo-menu"> Nuestros Productos</h3>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img src="menu/img/besos-nuez.jpg" alt="Sweet 1">
+                    </div>
+                    <div class="carousel-slide"><img src="menu/img/bunuelos-nuevo.jpg" alt="Sweet 2"></div>
+                    <div class="carousel-slide"><img src="menu/img/bombas-nuevo.jpg" alt="Sweet 3"></div>
+                    <div class="carousel-slide"><img src="menu/img/bunuelos-corazon.jpg" alt="Sweet 4"></div>
+                    <!-- Duplicates for seamless loop if needed, but JS can handle it or simple CSS animation -->
+                    <div class="carousel-slide"><img src="menu/img/fresas-chocolate.jpg" alt="Sweet 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h3 class="titulo-menu"> Datos de contacto</h3>
+            <p class="contact-text">
+                ¿Hubo algún problema con su pedido? No dudes en contactarnos.
+            </p>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Ubicación</h3>
+                    <p> Naucalpan, Estado de México</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Teléfono</h3>
+                    <p>+55 12 96 95 55</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>mayra_susanag@hotmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Horario</h3>
+                    <p>Lun - Vie: 9:00 - 20:00</p>
+                    <p>Sab - Dom: 10:00 - 18:00</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="pie-pagina">
-        <div class="linea">
-            <h2> Dulce Tentacion </h2>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="menu/menu.html">Productos</a></li>
-                <li><a href="contacto/contacto.html">Contacto</a></li>
-                <li><a href="galeria/galeria.html">Galeria</a></li>
-            </ul>
-        </div>
-
-        <div class="linea">
-            <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="footer-container">
+            <div class="footer-section brand">
+                <h2>Dulce Tentacion</h2>
+                <p>Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu/menu.html">Productos</a></li>
+                    <li><a href="contacto/contacto.html">Contacto</a></li>
+                    <li><a href="galeria/galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 Dulce Tentacion. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="main/script.js"></script>
 </body>
 
 </html>

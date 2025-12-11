@@ -13,27 +13,17 @@
 </head>
 
 <body>
-    <header id="barra">
+    <header>
         <div class="interior">
             <a href="../index.html" class="logo"> <img src="../muffin.png" alt=""></a>
             <nav class="navegacion">
-                <input type="checkbox" id = "check">
-                <label for="check" class = "checkbtn">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 <ul>
                     <li><a href="../index.html">Inicio </a></li>
-                    <li class="submenu">
-                        <a href="../menu/menu.html"> Productos </a>
-                        <ul class="hijos">
-                            <li><a href="../menu/menu.html"> Panques </a></li>
-                            <li><a href="../menu/menu.html"> Cupcakes </a></li>
-                            <li><a href="../menu/menu.html"> Pasteles </a></li>
-                            <li> <a href="../menu/menu.html"> Chocolate </a></li>
-                            <li> <a href="../menu/menu.html"> Galletas </a></li>
-                            <li> <a href="../menu/menu.html"> Adicionales </a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../menu/menu.html"> Productos </a></li>
                     <li><a href="../contacto/contacto.html"> Contacto </a></li>
                     <li><a href="../galeria/galeria.html"> Galeria </a></li>
                 </ul>
@@ -42,8 +32,7 @@
     </header>
 
     <div class="overlay">
-        <h1> ¿Como nos puedes contactar?</h1>
-        <p class="cursiva"> ¡Te presentamos las alternativas que te ofrecemos! </p>
+        <h1 class="titulo-overlay"> ¿Como nos puedes contactar?</h1>
     </div>
 
     <!--  Inicio de la seccion de contacto -->
@@ -98,19 +87,29 @@
     </div>
 
     <footer class="pie-pagina">
-        <div class="linea">
-            <h2> Dulce Tentacion </h2>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../menu/menu.html">Productos</a></li>
-                <li><a href="../contacto/contacto.html">Contacto</a></li>
-                <li><a href="../galeria/galeria.html">Galeria</a></li>
-            </ul>
-        </div>
-
-        <div class="linea">
-            <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="footer-container">
+            <div class="footer-section brand">
+                <h2>Dulce Tentacion</h2>
+                <p>Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu/menu.html">Productos</a></li>
+                    <li><a href="contacto/contacto.html">Contacto</a></li>
+                    <li><a href="galeria/galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 Dulce Tentacion. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>

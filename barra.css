@@ -1,43 +1,46 @@
-*{ margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
 
-header{
+header {
     width: 100%;
     min-height: 90px;
     text-decoration: none;
     background-color: #ffafcc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: sticky;
-    top: 0;
+    position: static;
 }
 
 
-.interior{
+.interior {
     max-width: 100%;
     padding: 0 10px;
     margin: auto;
 }
-.navegacion a{
+
+.navegacion a {
     text-decoration: none;
 }
-.logo{
-    float: left; 
+
+.logo {
+    float: left;
     padding: 5px 20px 0;
 }
 
-.logo img{
+.logo img {
     height: 80px;
     transition: .3s;
 }
 
-.logo img:hover{
+.logo img:hover {
     transform: scale(1.1);
     transition: .3s;
 }
 
-.navegacion{
+.navegacion {
     float: right;
     display: flex;
     align-items: center;
@@ -47,23 +50,23 @@ header{
     position: relative;
 }
 
-.navegacion ul{
+.navegacion ul {
     list-style: none;
     padding: 0 10px;
 }
 
-.navegacion ul li{
+.navegacion ul li {
     display: inline-block;
     position: relative;
     transition: .3s linear;
     z-index: 1000;
 }
 
-.navegacion ul li:hover{
+.navegacion ul li:hover {
     transform: scale(1.1);
 }
 
-.navegacion ul li a{
+.navegacion ul li a {
     color: rgb(0, 0, 0);
     text-align: center;
     text-transform: uppercase;
@@ -73,36 +76,36 @@ header{
     transition: .3s linear;
 }
 
-.navegacion ul li a:hover{
+.navegacion ul li a:hover {
     color: #ffffff;
     transform: scale(1.1);
 
 }
 
-.navegacion ul li:hover .hijos{
+.navegacion ul li:hover .hijos {
 
     display: block;
 
 }
 
-.navegacion .submenu .hijos{
+.navegacion .submenu .hijos {
     display: none;
     background: #ffc8dd;
     position: absolute;
     width: 100%;
 }
 
-.navegacion .submenu .hijos li{
+.navegacion .submenu .hijos li {
     display: block;
     overflow: hidden;
     border-bottom: none;
 }
 
-.navegacion .submenu .hijos li a{
+.navegacion .submenu .hijos li a {
     display: block;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: #fff;
     float: right;
@@ -111,61 +114,64 @@ header{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
 
-@media (max-width: 700px){
-    .checkbtn{
-      display: block;  
+@media (max-width: 700px) {
+    .checkbtn {
+        display: block;
     }
 
-    .navegacion ul li:hover .hijos{
+    .navegacion ul li:hover .hijos {
         display: none;
     }
 
-    ul{
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
         text-align: center;
         background: #ffc8dd;
         top: 90px;
-        left: -110%; 
-        transition: all .5s; 
+        left: -110%;
+        transition: all .5s;
         /*Agregamos el display de grid para poder alinear los elementos de la lista*/
         display: grid;
-        grid-template-rows: repeat(4,90px);
+        grid-template-rows: repeat(4, 90px);
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
     }
 
-    ul .submenu .hijos:hover{
+    ul .submenu .hijos:hover {
         margin: 5px 5px;
     }
 
-    li a:hover, li a.activate{
+    li a:hover,
+    li a.activate {
         background: none;
     }
 
-    #check:checked ~ ul{
+    #check:checked~ul {
         left: 0;
     }
 
-    .logo img{
+    .logo img {
         height: 50px;
     }
-    .logo{
+
+    .logo {
         float: left;
-        margin-top: 20px;   
+        margin-top: 20px;
     }
 
 }
