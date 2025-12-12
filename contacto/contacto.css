@@ -1,149 +1,148 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
+    font-family: 'Montserrat', sans-serif;
     background: url(img/watercolor.png);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
-/*CSS del header*/
-.cursiva {
-    font-style: italic;
-}
-
+/* Header/Overlay Styles */
 .overlay {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #a2d2ff;
+    background-color: #bde0fe;
+    /* Deeper pink */
     text-align: center;
-    font-size: 30px;
-    padding: 50px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 200px;
 }
 
 .titulo-overlay {
-    font-family: 'Tangerine';
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
 }
 
-/*Fin del CSS del header*/
-
-/*CSS Generales*/
-
-.contactos {
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
+/* Contact Section Layout */
+.contact-section {
+    padding: 0 20px 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.bloque {
-    width: 30%;
-    height: 450px;
-    margin: 30px;
-    display: inline-block;
-}
-
-.FormatoBloque {
-    padding: 20px 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    /*Agregamos las 2 lineas de abajo para poder centrar los elementos dentro de cada 
-    bloque*/
-    display: grid;
-    place-items: center;
-    height: 400px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.link-instagram {
-    background: url(img/instagram-fondo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.link-correo {
-    background: url(img/email-fondo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.link-whats {
-    background: url(img/whatsapp-fondo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contenedor-boton {
-    width: 100%;
-    height: 50px;
+.contact-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.Boton {
-    color: transparent;
-    text-decoration: none;
-    text-align: center;
-    padding: 25px 25px;
+/* Contact Cards */
+.contact-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
     border-radius: 20px;
-    width: 200px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    flex: 1 1 300px;
+    /* Responsive flex basis */
+    max-width: 350px;
+    text-align: center;
+    border-bottom: 5px solid #ff69b4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card i {
+    font-size: 50px;
+    color: #ff69b4;
+    margin-bottom: 25px;
+}
+
+.contact-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.contact-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 16px;
+    flex-grow: 1;
+    /* Pushes button to bottom */
+}
+
+/* Buttons */
+.contenedor-boton {
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn-contact {
     display: inline-block;
-    margin-top: 5%;
-    transition: .3s linear;
+    padding: 12px 35px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
 }
 
-.Boton:hover {
-    transform: scale(1.1);
-    transition: .3s linear;
+.btn-contact:hover {
+    background-color: #d14d94;
+    /* Darker pink */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
 }
 
-.texto-contacto {
-    font-weight: 100;
-}
-
-
-/* CSS del responsive web design */
-@media (max-width: 450px) {
-
-    .overlay {
-        font-size: 25px;
-        padding: 40px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .titulo-overlay {
+        font-size: 3.5em;
     }
 
-    .contactos {
-        display: flex;
+    .contact-container {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
 
-    .bloque {
-        width: 300px;
-        height: 400px;
-        margin: 20px;
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 40px 15px;
     }
 
-    .FormatoBloque {
-        font-size: 18px;
+    .titulo-overlay {
+        font-size: 3em;
     }
 
-    .contenedor-boton {
-        margin-top: 15px;
-    }
-
-    .Boton {
-        padding: 20px 20px;
-    }
-
-    .link-correo {
-        background-position-y: -5px;
+    .contact-card {
+        padding: 30px 20px;
     }
 }
