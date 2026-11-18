@@ -1,0 +1,666 @@
+[
+  {
+    "src": "contacto/img/email-fondo.jpg",
+    "webp": "contacto/img/email-fondo.webp",
+    "width": 1200,
+    "height": 844,
+    "originalKB": 75.5,
+    "webpKB": 7.9
+  },
+  {
+    "src": "contacto/img/instagram-fondo.png",
+    "webp": "contacto/img/instagram-fondo.webp",
+    "width": 1200,
+    "height": 675,
+    "originalKB": 143.3,
+    "webpKB": 11.9
+  },
+  {
+    "src": "contacto/img/watercolor.png",
+    "webp": "contacto/img/watercolor.webp",
+    "width": 400,
+    "height": 400,
+    "originalKB": 30.8,
+    "webpKB": 4.1
+  },
+  {
+    "src": "contacto/img/whatsapp-fondo.png",
+    "webp": "contacto/img/whatsapp-fondo.webp",
+    "width": 728,
+    "height": 410,
+    "originalKB": 20,
+    "webpKB": 7.4
+  },
+  {
+    "src": "contacto/instagram.png",
+    "webp": "contacto/instagram.webp",
+    "width": 512,
+    "height": 512,
+    "originalKB": 59,
+    "webpKB": 11.4
+  },
+  {
+    "src": "galeria/fotos/bombas-navidad.jpg",
+    "webp": "galeria/fotos/bombas-navidad.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 107.6,
+    "webpKB": 75.5
+  },
+  {
+    "src": "galeria/fotos/bombas-navidad2.jpg",
+    "webp": "galeria/fotos/bombas-navidad2.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 132.4,
+    "webpKB": 106.9
+  },
+  {
+    "src": "galeria/fotos/bombas-navidad3.jpg",
+    "webp": "galeria/fotos/bombas-navidad3.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 202.9,
+    "webpKB": 188.3
+  },
+  {
+    "src": "galeria/fotos/bunuelos-regalo.jpg",
+    "webp": "galeria/fotos/bunuelos-regalo.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 186.4,
+    "webpKB": 180.9
+  },
+  {
+    "src": "galeria/fotos/bunuelos.jpg",
+    "webp": "galeria/fotos/bunuelos.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 144.4,
+    "webpKB": 120.7
+  },
+  {
+    "src": "galeria/fotos/fresas.jpg",
+    "webp": "galeria/fotos/fresas.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 170.2,
+    "webpKB": 155.9
+  },
+  {
+    "src": "galeria/fotos/muffins-navidad.jpg",
+    "webp": "galeria/fotos/muffins-navidad.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 196,
+    "webpKB": 184.9
+  },
+  {
+    "src": "galeria/fotos/panque-naranja2.jpg",
+    "webp": "galeria/fotos/panque-naranja2.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 122.3,
+    "webpKB": 98.2
+  },
+  {
+    "src": "galeria/fotos/panque-regalo.jpg",
+    "webp": "galeria/fotos/panque-regalo.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 116.8,
+    "webpKB": 87.1
+  },
+  {
+    "src": "galeria/fotos/panques-naranja.jpg",
+    "webp": "galeria/fotos/panques-naranja.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 112.2,
+    "webpKB": 80.1
+  },
+  {
+    "src": "galeria/fotos/panques-navidad.jpg",
+    "webp": "galeria/fotos/panques-navidad.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 177.4,
+    "webpKB": 173.3
+  },
+  {
+    "src": "galeria/fotos/panques-navidad2.jpg",
+    "webp": "galeria/fotos/panques-navidad2.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 158.8,
+    "webpKB": 142.6
+  },
+  {
+    "src": "galeria/fotos/panques-navidad3.jpg",
+    "webp": "galeria/fotos/panques-navidad3.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 184.9,
+    "webpKB": 173.2
+  },
+  {
+    "src": "galeria/fotos/panques-navidad4.jpg",
+    "webp": "galeria/fotos/panques-navidad4.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 189.4,
+    "webpKB": 179.6
+  },
+  {
+    "src": "galeria/fotos/pretzels-navidad.jpg",
+    "webp": "galeria/fotos/pretzels-navidad.webp",
+    "width": 819,
+    "height": 1024,
+    "originalKB": 132.7,
+    "webpKB": 96.2
+  },
+  {
+    "src": "galeria/fotos/regalo-indiv.jpg",
+    "webp": "galeria/fotos/regalo-indiv.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 82.4,
+    "webpKB": 52.1
+  },
+  {
+    "src": "galeria/fotos/regalo1.jpg",
+    "webp": "galeria/fotos/regalo1.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 70.6,
+    "webpKB": 40.6
+  },
+  {
+    "src": "main/img/muffin.png",
+    "webp": "main/img/muffin.webp",
+    "width": 512,
+    "height": 512,
+    "originalKB": 31.5,
+    "webpKB": 16.4
+  },
+  {
+    "src": "main/img/pexels-brigitte-tohm-239581.jpg",
+    "webp": "main/img/pexels-brigitte-tohm-239581.webp",
+    "width": 1600,
+    "height": 1067,
+    "originalKB": 1431.3,
+    "webpKB": 81.3
+  },
+  {
+    "src": "main/img/pexels-lukas-616358.jpg",
+    "webp": "main/img/pexels-lukas-616358.webp",
+    "width": 1600,
+    "height": 1060,
+    "originalKB": 4569.4,
+    "webpKB": 320.2
+  },
+  {
+    "src": "main/img/pexels-lukas-616358.jpg",
+    "webp": "main/img/pexels-lukas-616358-800.webp",
+    "width": 800,
+    "height": 530,
+    "originalKB": 4569.4,
+    "webpKB": 61.4
+  },
+  {
+    "src": "main/img/pexels-negative-space-33999.jpg",
+    "webp": "main/img/pexels-negative-space-33999.webp",
+    "width": 1600,
+    "height": 1067,
+    "originalKB": 543.4,
+    "webpKB": 29.6
+  },
+  {
+    "src": "main/img/pexels-sydney-troxell-708488.jpg",
+    "webp": "main/img/pexels-sydney-troxell-708488.webp",
+    "width": 1600,
+    "height": 1066,
+    "originalKB": 398.2,
+    "webpKB": 130.3
+  },
+  {
+    "src": "main/img/watercolor.png",
+    "webp": "main/img/watercolor.webp",
+    "width": 400,
+    "height": 400,
+    "originalKB": 30.8,
+    "webpKB": 4.1
+  },
+  {
+    "src": "menu/img/besos-nuevo.jpeg",
+    "webp": "menu/img/besos-nuevo.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 253.2,
+    "webpKB": 112.1
+  },
+  {
+    "src": "menu/img/besos-nuez.jpg",
+    "webp": "menu/img/besos-nuez.webp",
+    "width": 1106,
+    "height": 1056,
+    "originalKB": 269.3,
+    "webpKB": 113.9
+  },
+  {
+    "src": "menu/img/bombas-nuevo.jpg",
+    "webp": "menu/img/bombas-nuevo.webp",
+    "width": 1200,
+    "height": 1600,
+    "originalKB": 397.3,
+    "webpKB": 258.2
+  },
+  {
+    "src": "menu/img/bombas1.jpg",
+    "webp": "menu/img/bombas1.webp",
+    "width": 448,
+    "height": 204,
+    "originalKB": 29.9,
+    "webpKB": 13.9
+  },
+  {
+    "src": "menu/img/bombas2.jpg",
+    "webp": "menu/img/bombas2.webp",
+    "width": 1089,
+    "height": 1200,
+    "originalKB": 367.3,
+    "webpKB": 157.8
+  },
+  {
+    "src": "menu/img/borrego-manzana.jpg",
+    "webp": "menu/img/borrego-manzana.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 117.6,
+    "webpKB": 87.3
+  },
+  {
+    "src": "menu/img/borrego-manzana2jpg.jpg",
+    "webp": "menu/img/borrego-manzana2jpg.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 124,
+    "webpKB": 95.4
+  },
+  {
+    "src": "menu/img/brownie-corazon.jpg",
+    "webp": "menu/img/brownie-corazon.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 422.1,
+    "webpKB": 215.7
+  },
+  {
+    "src": "menu/img/brownie.jpg",
+    "webp": "menu/img/brownie.webp",
+    "width": 869,
+    "height": 970,
+    "originalKB": 286.3,
+    "webpKB": 148
+  },
+  {
+    "src": "menu/img/bunuelos-corazon.jpg",
+    "webp": "menu/img/bunuelos-corazon.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 430.4,
+    "webpKB": 213.4
+  },
+  {
+    "src": "menu/img/bunuelos-grandes.jpeg",
+    "webp": "menu/img/bunuelos-grandes.webp",
+    "width": 1200,
+    "height": 1600,
+    "originalKB": 346,
+    "webpKB": 215.2
+  },
+  {
+    "src": "menu/img/bunuelos-img.jpeg",
+    "webp": "menu/img/bunuelos-img.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 158.5,
+    "webpKB": 102.9
+  },
+  {
+    "src": "menu/img/fresas-cubiertas.jpg",
+    "webp": "menu/img/fresas-cubiertas.webp",
+    "width": 1200,
+    "height": 1600,
+    "originalKB": 413.3,
+    "webpKB": 304.2
+  },
+  {
+    "src": "menu/img/bunuelos.jpg",
+    "webp": "menu/img/bunuelos.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 316.9,
+    "webpKB": 137.7
+  },
+  {
+    "src": "menu/img/cerezas.jpg",
+    "webp": "menu/img/cerezas.webp",
+    "width": 1031,
+    "height": 1005,
+    "originalKB": 220.4,
+    "webpKB": 81.7
+  },
+  {
+    "src": "menu/img/choco-ciruela.nuevo.jpeg",
+    "webp": "menu/img/choco-ciruela.nuevo.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 410.1,
+    "webpKB": 203
+  },
+  {
+    "src": "menu/img/chocolate-ciruela.jpg",
+    "webp": "menu/img/chocolate-ciruela.webp",
+    "width": 391,
+    "height": 369,
+    "originalKB": 111,
+    "webpKB": 43.4
+  },
+  {
+    "src": "menu/img/cucharas-choco.jpeg",
+    "webp": "menu/img/cucharas-choco.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 227.9,
+    "webpKB": 180.7
+  },
+  {
+    "src": "menu/img/cupcake-velvet.jpeg",
+    "webp": "menu/img/cupcake-velvet.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 167.8,
+    "webpKB": 104.6
+  },
+  {
+    "src": "menu/img/cupcake-zanahoria.jpeg",
+    "webp": "menu/img/cupcake-zanahoria.webp",
+    "width": 960,
+    "height": 1280,
+    "originalKB": 91.5,
+    "webpKB": 48.3
+  },
+  {
+    "src": "menu/img/enjambre-choco.jpeg",
+    "webp": "menu/img/enjambre-choco.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 167,
+    "webpKB": 106.3
+  },
+  {
+    "src": "menu/img/flan.jpg",
+    "webp": "menu/img/flan.webp",
+    "width": 393,
+    "height": 430,
+    "originalKB": 67.3,
+    "webpKB": 37.5
+  },
+  {
+    "src": "menu/img/fresas-chocolate.jpg",
+    "webp": "menu/img/fresas-chocolate.webp",
+    "width": 849,
+    "height": 519,
+    "originalKB": 144.4,
+    "webpKB": 68.6
+  },
+  {
+    "src": "menu/img/fresas-img.jpeg",
+    "webp": "menu/img/fresas-img.webp",
+    "width": 1200,
+    "height": 1600,
+    "originalKB": 427.2,
+    "webpKB": 305.6
+  },
+  {
+    "src": "menu/img/fresas-nuevo.jpg",
+    "webp": "menu/img/fresas-nuevo.webp",
+    "width": 1200,
+    "height": 1600,
+    "originalKB": 413.3,
+    "webpKB": 304.2
+  },
+  {
+    "src": "menu/img/galletas-almendra.jpg",
+    "webp": "menu/img/galletas-almendra.webp",
+    "width": 357,
+    "height": 475,
+    "originalKB": 60.3,
+    "webpKB": 30.2
+  },
+  {
+    "src": "menu/img/galletas-chocolate.jpg",
+    "webp": "menu/img/galletas-chocolate.webp",
+    "width": 384,
+    "height": 512,
+    "originalKB": 76.9,
+    "webpKB": 40.8
+  },
+  {
+    "src": "menu/img/galletas-nuez.jpg",
+    "webp": "menu/img/galletas-nuez.webp",
+    "width": 397,
+    "height": 507,
+    "originalKB": 86.7,
+    "webpKB": 50.3
+  },
+  {
+    "src": "menu/img/gelatina-mazapan.jpeg",
+    "webp": "menu/img/gelatina-mazapan.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 195.1,
+    "webpKB": 138.9
+  },
+  {
+    "src": "menu/img/manzanas-chamoy.jpeg",
+    "webp": "menu/img/manzanas-chamoy.webp",
+    "width": 960,
+    "height": 1280,
+    "originalKB": 191.2,
+    "webpKB": 150.5
+  },
+  {
+    "src": "menu/img/mini-donas.jpg",
+    "webp": "menu/img/mini-donas.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 139.5,
+    "webpKB": 116.4
+  },
+  {
+    "src": "menu/img/mini-donas2.jpg",
+    "webp": "menu/img/mini-donas2.webp",
+    "width": 1024,
+    "height": 768,
+    "originalKB": 179.2,
+    "webpKB": 177.9
+  },
+  {
+    "src": "menu/img/moras-panque.jpg",
+    "webp": "menu/img/moras-panque.webp",
+    "width": 1160,
+    "height": 599,
+    "originalKB": 245,
+    "webpKB": 124.6
+  },
+  {
+    "src": "menu/img/muffin-moras.jpg",
+    "webp": "menu/img/muffin-moras.webp",
+    "width": 910,
+    "height": 599,
+    "originalKB": 220.9,
+    "webpKB": 124.8
+  },
+  {
+    "src": "menu/img/muffin-naranja.jpg",
+    "webp": "menu/img/muffin-naranja.webp",
+    "width": 369,
+    "height": 261,
+    "originalKB": 40.4,
+    "webpKB": 21.6
+  },
+  {
+    "src": "menu/img/muffin-velvet.jpg",
+    "webp": "menu/img/muffin-velvet.webp",
+    "width": 350,
+    "height": 254,
+    "originalKB": 20.1,
+    "webpKB": 8.3
+  },
+  {
+    "src": "menu/img/muffin-zanahoria.jpg",
+    "webp": "menu/img/muffin-zanahoria.webp",
+    "width": 368,
+    "height": 254,
+    "originalKB": 38.9,
+    "webpKB": 20.7
+  },
+  {
+    "src": "menu/img/panque-naranja.jpg",
+    "webp": "menu/img/panque-naranja.webp",
+    "width": 383,
+    "height": 238,
+    "originalKB": 37.6,
+    "webpKB": 20.9
+  },
+  {
+    "src": "menu/img/panque-nuez.jpg",
+    "webp": "menu/img/panque-nuez.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 1708.9,
+    "webpKB": 282.9
+  },
+  {
+    "src": "menu/img/panque-zanahoria.jpg",
+    "webp": "menu/img/panque-zanahoria.webp",
+    "width": 464,
+    "height": 272,
+    "originalKB": 48.2,
+    "webpKB": 25
+  },
+  {
+    "src": "menu/img/panques-naranja-nuevo.jpeg",
+    "webp": "menu/img/panques-naranja-nuevo.webp",
+    "width": 1200,
+    "height": 900,
+    "originalKB": 277,
+    "webpKB": 122.2
+  },
+  {
+    "src": "menu/img/panques-platano.jpeg",
+    "webp": "menu/img/panques-platano.webp",
+    "width": 960,
+    "height": 1280,
+    "originalKB": 202.6,
+    "webpKB": 169.7
+  },
+  {
+    "src": "menu/img/pastel-indv.jpg",
+    "webp": "menu/img/pastel-indv.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 82.4,
+    "webpKB": 52.1
+  },
+  {
+    "src": "menu/img/pastel-velvet.jpg",
+    "webp": "menu/img/pastel-velvet.webp",
+    "width": 633,
+    "height": 518,
+    "originalKB": 81.2,
+    "webpKB": 31.3
+  },
+  {
+    "src": "menu/img/pastel-zanahoria.jpg",
+    "webp": "menu/img/pastel-zanahoria.webp",
+    "width": 384,
+    "height": 257,
+    "originalKB": 35.7,
+    "webpKB": 18.2
+  },
+  {
+    "src": "menu/img/pay-datiles-bota.jpg",
+    "webp": "menu/img/pay-datiles-bota.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 205.9,
+    "webpKB": 210.5
+  },
+  {
+    "src": "menu/img/pay-datiles-esfera.jpg",
+    "webp": "menu/img/pay-datiles-esfera.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 189.5,
+    "webpKB": 187.3
+  },
+  {
+    "src": "menu/img/pay-datiles.jpg",
+    "webp": "menu/img/pay-datiles.webp",
+    "width": 768,
+    "height": 1024,
+    "originalKB": 160,
+    "webpKB": 145
+  },
+  {
+    "src": "menu/img/pay-ferrero.jpg",
+    "webp": "menu/img/pay-ferrero.webp",
+    "width": 828,
+    "height": 607,
+    "originalKB": 534.5,
+    "webpKB": 70.6
+  },
+  {
+    "src": "menu/img/pay-queso.jpg",
+    "webp": "menu/img/pay-queso.webp",
+    "width": 314,
+    "height": 276,
+    "originalKB": 32.4,
+    "webpKB": 16.6
+  },
+  {
+    "src": "menu/img/pretzels.jpg",
+    "webp": "menu/img/pretzels.webp",
+    "width": 767,
+    "height": 849,
+    "originalKB": 196.4,
+    "webpKB": 88.2
+  },
+  {
+    "src": "menu/img/tarro-chocolate.jpg",
+    "webp": "menu/img/tarro-chocolate.webp",
+    "width": 816,
+    "height": 1088,
+    "originalKB": 167.5,
+    "webpKB": 44.7
+  },
+  {
+    "src": "menu/img/watercolor.png",
+    "webp": "menu/img/watercolor.webp",
+    "width": 400,
+    "height": 400,
+    "originalKB": 30.8,
+    "webpKB": 4.1
+  },
+  {
+    "src": "muffin.png",
+    "webp": "muffin.webp",
+    "width": 512,
+    "height": 512,
+    "originalKB": 31.5,
+    "webpKB": 16.4
+  }
+]

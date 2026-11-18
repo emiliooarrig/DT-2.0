@@ -1,217 +1,439 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
+/* ==========================================================================
+   Dulce Tentación — Menú / Productos (page CSS)
+   Loaded after shared/tokens.css, base.css, components.css.
+   Palette is locked: only var(--color-…) or rgba() of palette colors.
+   Mobile-first: base = 320px, then 480 / 768 / 1024.
+   ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
-
-body {
-    background: url(img/watercolor.png);
-}
-
-.precio {
-    width: fit-content;
-    height: auto;
-    border-radius: 30px;
-    padding: 5px 0;
-}
-
-.titulos {
-    border-left: 15px solid #cdb4db;
-    font-size: 30px;
-    padding: 15px 15px;
+/* Offsets used by the sticky category bar and anchor targets.
+   menu.js keeps them in sync with the real header / bar heights. */
+:root {
+  --menu-header-h: var(--header-h-scrolled);
+  --menu-cats-h: 3.75rem;
+  --menu-cat-pad-top: var(--space-8);
 }
 
 
-/*Fin de codigos a reutilizar*/
+/* ---------- 1. Hero ---------- */
+/* Hero CTAs: full-width stacked buttons below 480px, inline from 480px
+   (same behaviour as the home hero) */
+.menu-hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-3);
+  width: 100%;
+  margin-top: var(--space-2);
+}
 
-.overlay {
-    display: grid;
-    align-items: center;
+@media (min-width: 480px) {
+  .menu-hero__actions {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    background: #bde0fe;
-    height: 200px;
-    text-align: center;
-    font-size: 30px;
-}
-
-.titulo-overlay {
-    font-family: 'Tangerine';
-}
-
-/* Sección de panques (contenedor general con Grid) */
-.seccion {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-items: center;
-    /* Centers cards in their grid areas */
-}
-
-/* Cada post individual (Tarjeta) */
-.Post {
-    background: #ffffff;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 340px;
-    /* Prevents stretching too wide */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    font-size: 16px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.02);
-}
-
-.Post:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.Post h4 {
-    margin: 15px 10px 10px;
-    color: #333;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.Post p {
-    padding: 0 20px;
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-/* Imagen en tarjeta */
-.div-imagen {
-    width: 100%;
-    height: 220px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #f0f0f0;
-    overflow: hidden;
-}
-
-.formatoImagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: none;
-    border-radius: 0;
-    transition: transform 0.5s ease;
-}
-
-.Post:hover .formatoImagen {
-    transform: scale(1.05);
-}
-
-/* Texto "MÁS VENDIDO / NUEVO" (Overlay on Image) */
-.mas-vendido {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-top: -30px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    align-self: flex-end;
-    /* Align to right */
-
-    font-size: 11px;
-    background-color: #ffce00;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-weight: 800;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Lista de precios */
-.listaPrecios {
-    padding: 10px 20px 20px;
-    /* Padding bottom for space */
-    list-style: none;
-    font-weight: 600;
-    font-size: 15px;
-    width: 100%;
-    color: #4a4a4a;
-    background-color: #fafafa;
-    /* Slight distinctive background for price area */
-    border-top: 1px solid #eee;
-    margin-top: auto;
-    /* Pushes to bottom */
-}
-
-.listaPrecios li {
-    margin-bottom: 6px;
-    display: flex;
-    justify-content: space-between;
-    /* Spreads label and price if formatted as "Label: Price" */
-    padding: 0 10px;
-}
-
-/* Single Price styling (h4.precio) */
-.precio {
-    margin-top: auto;
-    background-color: #cdb4db;
-    color: white;
-    width: auto;
-    /* Reset fit-content if needed, or keep for badge look */
-    min-width: 60%;
-    margin-bottom: 20px;
-    padding: 8px 20px;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 10px rgba(205, 180, 219, 0.4);
+  }
 }
 
 
-@media (max-width: 768px) {
-    .seccion {
-        padding: 20px;
-        gap: 20px;
-    }
-
+/* ---------- 2. Sticky category bar ---------- */
+.menu-cats {
+  position: sticky;
+  top: var(--menu-header-h);
+  z-index: calc(var(--z-float) - 1);
+  margin-top: var(--scallop-r);              /* leaves room for the hero's scalloped edge */
+  background-color: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--color-border-soft);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  backdrop-filter: saturate(1.4) blur(10px);
+  transition: box-shadow var(--dur-base) var(--ease-out);
 }
 
-@media (max-width: 450px) {
-    .overlay {
-        height: 150px;
-        padding: 20px;
-    }
+.menu-cats.is-stuck {
+  box-shadow: var(--shadow-sm);
+}
 
-    .overlay h1 {
-        font-size: 6vh;
-    }
+.menu-cats__list {
+  position: relative;                        /* offsetParent for chip centering in menu.js */
+  display: flex;
+  gap: var(--space-2);
+  max-width: calc(var(--container-max) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding: var(--space-2) var(--gutter);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: var(--gutter);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
 
-    .titulos {
-        font-size: 24px;
-        padding: 10px;
-    }
+.menu-cats__list::-webkit-scrollbar {
+  display: none;
+}
 
-    .seccion {
-        grid-template-columns: 1fr;
-        /* Full width cards on mobile */
-        padding: 15px;
-    }
+.menu-cats__list > li {
+  flex: none;
+  scroll-snap-align: start;
+}
 
-    .Post {
-        margin: 0;
-    }
+/* Centered when everything fits; auto margins collapse to 0 when it overflows */
+.menu-cats__list > li:first-child { margin-left: auto; }
+.menu-cats__list > li:last-child  { margin-right: auto; }
+
+/* Edge fades hint that the row scrolls (classes toggled by menu.js) */
+.menu-cats.has-fade-end .menu-cats__list {
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 2.5rem), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) calc(100% - 2.5rem), rgba(0, 0, 0, 0));
+}
+
+.menu-cats.has-fade-start .menu-cats__list {
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 2.5rem);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 2.5rem);
+}
+
+.menu-cats.has-fade-start.has-fade-end .menu-cats__list {
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 2.5rem, rgba(0, 0, 0, 1) calc(100% - 2.5rem), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 2.5rem, rgba(0, 0, 0, 1) calc(100% - 2.5rem), rgba(0, 0, 0, 0));
+}
+
+.menu-cats__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--tap-min);
+  padding: 0 var(--space-3) 0 var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+
+.menu-cats__chip:hover {
+  border-color: var(--color-rosa);
+  background-color: var(--color-rosa-muy-claro);
+  color: var(--color-text);
+}
+
+.menu-cats__count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.4rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-rosa-muy-claro);
+  color: var(--color-text);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+}
+
+.menu-cats__chip[aria-current="true"] {
+  border-color: var(--color-fucsia-oscuro);
+  background-color: var(--color-fucsia-oscuro);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-cta);
+}
+
+.menu-cats__chip[aria-current="true"] .menu-cats__count {
+  background-color: var(--color-blanco);
+  color: var(--color-fucsia-oscuro);
+}
+
+@media (min-width: 768px) {
+  .menu-cats__list {
+    gap: var(--space-3);
+    padding-block: var(--space-3);
+  }
+
+  .menu-cats__chip {
+    font-size: var(--fs-base);
+  }
+}
+
+
+/* ---------- 3. Category sections ---------- */
+.menu-category {
+  padding-top: var(--menu-cat-pad-top);
+  padding-bottom: var(--section-space-sm);
+  /* html already reserves the header (scroll-padding-top); add the sticky bar,
+     minus the section's own top padding, so the heading lands just below the bar */
+  scroll-margin-top: max(0px, calc(var(--menu-cats-h) + var(--space-5) - var(--menu-cat-pad-top)));
+}
+
+.menu-category + .menu-category {
+  border-top: 1px solid var(--color-border);
+}
+
+.menu-category__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: clamp(var(--space-5), 3vw, var(--space-7));
+}
+
+.menu-category__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
+}
+
+.menu-category__count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-rosa-muy-claro);
+  color: var(--color-text);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.menu-category__intro {
+  max-width: var(--measure);
+  color: var(--color-text-muted);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+}
+
+/* Other in-page targets (e.g. #como-pedir) also clear the sticky bar */
+.menu-steps-section {
+  scroll-margin-top: var(--menu-cats-h);
+}
+
+
+/* ---------- 4. Product grid + cards ---------- */
+/* Wrapping flex row with a fixed card basis: every card has the same width
+   (1 / 2 / 3 per row) and an incomplete last row is centered. */
+.menu-grid {
+  --menu-cols: 1;
+  --menu-gap: clamp(var(--space-4), 3vw, var(--space-6));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--menu-gap);
+}
+
+.menu-grid > .menu-card {
+  flex: 0 0 calc((100% - (var(--menu-cols) - 1) * var(--menu-gap)) / var(--menu-cols));
+  min-width: 0;
+}
+
+@media (min-width: 480px) {
+  .menu-grid { --menu-cols: 2; }
+}
+
+@media (min-width: 1024px) {
+  .menu-grid { --menu-cols: 3; }
+}
+
+.menu-card {
+  --card-ratio: 4 / 3;
+}
+
+.menu-card picture {
+  display: block;
+  height: 100%;
+}
+
+.menu-card .card__body {
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-5) var(--space-4);
+}
+
+.menu-card .card__title {
+  font-size: var(--fs-lg);
+}
+
+.menu-card .card__text {
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+.menu-card .card__badge {
+  /* the badge sits in the body (after the name, for screen-reader order)
+     but is positioned over the photo, relative to the card */
+  top: var(--space-3);
+  right: var(--space-3);
+}
+
+.menu-card__footer {
+  padding: var(--space-4) var(--space-5);
+}
+
+/* Order note (e.g. minimum quantity) */
+.menu-note {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--color-accent-deco);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-rosa-muy-claro);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  line-height: 1.45;
+}
+
+.menu-note i {
+  margin-top: 0.2em;
+  color: var(--color-fucsia-oscuro);
+}
+
+/* Single price: prominent tag */
+.menu-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-2);
+}
+
+.menu-price__amount {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  font-variation-settings: "SOFT" 100;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.menu-price__unit {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+/* Several sizes: label …… price rows */
+.menu-prices {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.menu-prices__row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.menu-prices__row dt {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: var(--space-2);
+  min-width: 0;
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+.menu-prices__row dt::after {
+  content: "";
+  flex: 1 1 var(--space-4);
+  min-width: var(--space-4);
+  border-bottom: 2px dotted var(--color-rosa);
+  transform: translateY(-0.3em);
+}
+
+.menu-prices__row dd {
+  flex: none;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  font-variation-settings: "SOFT" 100;
+  line-height: 1.2;
+  color: var(--color-accent);
+}
+
+
+/* ---------- 5. Intercalated promo banners ---------- */
+.menu-promo {
+  padding-block: var(--space-2) var(--space-8);
+}
+
+.menu-promo__band {
+  overflow: hidden;
+  padding-inline: clamp(var(--space-5), 5vw, var(--space-9));
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+/* Keep white text AA on the fucsia band: drop the shared white glows */
+.menu-promo__band.cta-band--fucsia {
+  background-image: radial-gradient(circle at 92% 85%, rgba(255, 105, 180, 0.25), transparent 45%);
+}
+
+
+/* ---------- 6. Cómo pedir ---------- */
+.menu-steps {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .menu-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.menu-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-6) var(--space-5);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.menu-step__num {
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: var(--space-1);
+  border: 2px solid var(--color-accent-deco);
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  color: var(--color-fucsia-oscuro);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+}
+
+.menu-step__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+}
+
+.menu-step__text {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+
+/* ---------- 7. Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .menu-cats,
+  .menu-cats__chip {
+    transition: none;
+  }
 }

@@ -1,189 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="galeria.css">
-    <link rel="stylesheet" href="../barra.css">
-    <link rel="stylesheet" href="../footer-estilos.css">
-    <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous"></script>
-    <title>Galeria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Galería · Dulce Tentación</title>
+  <meta name="description" content="Galería de trabajos de Dulce Tentación: bombas de chocolate, panqués, buñuelos, fresas con chocolate y regalos navideños. Pide el tuyo por WhatsApp.">
+  <meta name="theme-color" content="#ffafcc">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Dulce Tentación">
+  <meta property="og:title" content="Galería · Dulce Tentación">
+  <meta property="og:description" content="Galería de trabajos de Dulce Tentación: bombas de chocolate, panqués, buñuelos, fresas con chocolate y regalos navideños. Pide el tuyo por WhatsApp.">
+  <meta property="og:image" content="https://dulce-tentacion.netlify.app/galeria/fotos/regalo1.jpg">
+  <meta property="og:url" content="https://dulce-tentacion.netlify.app/galeria/galeria.html">
+  <link rel="canonical" href="https://dulce-tentacion.netlify.app/galeria/galeria.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="Caja de regalo con panquecito, bomba de chocolate y fresas con chocolate">
+  <link rel="icon" type="image/png" href="../muffin.png">
+  <link rel="apple-touch-icon" href="../muffin.png">
+
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('ui-ready'))document.documentElement.classList.remove('js');});</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without blocking the first paint (display=swap shows fallback text meanwhile) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap"></noscript>
+
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="galeria.css">
+
+  <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="galeria.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="../muffin-112.webp" alt="" width="46" height="46">
+        <span class="brand__name">Dulce Tentación</span>
+      </a>
 
-    <header>
-        <div class="interior">
-            <a href="../index.html" class="logo"> <img src="../muffin.png" alt=""></a>
-            <nav class="navegacion">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul>
-                    <li><a href="../index.html">Inicio </a></li>
-                    <li><a href="../menu/menu.html"> Productos </a></li>
-                    <li><a href="../contacto/contacto.html"> Contacto </a></li>
-                    <li><a href="../galeria/galeria.html"> Galeria </a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list" role="list">
+          <li class="site-nav__item"><a class="site-nav__link" href="../index.html">Inicio</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../menu/menu.html">Productos</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../galeria/galeria.html" aria-current="page">Galería</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block site-nav__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+        </a>
+      </nav>
 
-    <div class="portada">
-        <h1 class="titulo-overlay"> Galeria de trabajos </h1>
+      <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="header-cta__text">Pide por WhatsApp</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Menú" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
     </div>
-    <!-- Inicio de la parte de la galería-->
-    <div class="galeria">
-        <h1> ¡Checa los productos que hemos hecho!</h1>
-        <div class="contenedor-imagenes">
-            <div class="imagen">
-                <img src="../galeria/fotos/bombas-navidad.jpg" alt="">
-                <div class="overlay">
-                    <h2>Bombas de chocolate</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/bombas-navidad2.jpg" alt="">
-                <div class="overlay">
-                    <h2>Bombas de Chocolate</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/bombas-navidad3.jpg" alt="">
-                <div class="overlay">
-                    <h2>Bombas de Chocolate</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/panque-regalo.jpg" alt="">
-                <div class="overlay">
-                    <h2> Regalos individuales</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/bunuelos-regalo.jpg" alt="">
-                <div class="overlay">
-                    <h2>Buñuelos navideños</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/bunuelos.jpg" alt="">
-                <div class="overlay">
-                    <h2>Buñuelos </h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/fresas.jpg" alt="">
-                <div class="overlay">
-                    <h2>Fresas con chocolate</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/muffins-navidad.jpg" alt="">
-                <div class="overlay">
-                    <h2>Regalos individuales</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/panque-naranja2.jpg" alt="">
-                <div class="overlay">
-                    <h2>Panque de naranja</h2>
-                </div>
-            </div>
-            <div class="imagen">
-                <img src="../galeria/fotos/panques-naranja.jpg" alt="">
-                <div class="overlay">
-                    <h2> Panques individuales</h2>
-                </div>
-            </div>
+  </header>
 
-            <div class="imagen">
-                <img src="../galeria/fotos/panques-navidad.jpg" alt="">
-                <div class="overlay">
-                    <h2>Panques navideños</h2>
-                </div>
-            </div>
-
-            <div class="imagen">
-                <img src="../galeria/fotos/panques-navidad2.jpg" alt="">
-                <div class="overlay">
-                    <h2> Panques con regalo navideño </h2>
-                </div>
-            </div>
-
-            <div class="imagen">
-                <img src="../galeria/fotos/panques-navidad3.jpg" alt="">
-                <div class="overlay">
-                    <h2> Panques con regalo navideño </h2>
-                </div>
-            </div>
-
-            <div class="imagen">
-                <img src="../galeria/fotos/panques-navidad4.jpg" alt="">
-                <div class="overlay">
-                    <h2> Panques con regalo navideño </h2>
-                </div>
-            </div>
-
-            <div class="imagen">
-                <img src="../galeria/fotos/pretzels-navidad.jpg" alt="">
-                <div class="overlay">
-                    <h2> Pretzels navideños </h2>
-                </div>
-            </div>
-
-
-            <div class="imagen">
-                <img src="../galeria/fotos/regalo-indiv.jpg" alt="">
-                <div class="overlay">
-                    <h2> Panque para regalo</h2>
-                </div>
-            </div>
-
-            <div class="imagen">
-                <img src="../galeria/fotos/regalo1.jpg" alt="">
-                <div class="overlay">
-                    <h2> Regalos personalizables </h2>
-                </div>
-            </div>
-
+  <main id="contenido" tabindex="-1">
+    <section class="page-hero page-hero--azul scallop-bottom">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Postres y regalos</p>
+        <h1 class="page-hero__title">Galería de <em>trabajos</em></h1>
+        <p class="page-hero__lead">Cada pedido es único. Aquí tienes algunos de los postres y regalos que hemos preparado: bombas de chocolate, panqués, buñuelos, fresas con chocolate y más.</p>
+        <div class="galeria-hero__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide algo similar
+          </a>
+          <a class="btn btn--outline btn--lg" href="../menu/menu.html">Ver productos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
+      </div>
+    </section>
+
+    <section class="section galeria" aria-labelledby="galeria-titulo">
+      <div class="container galeria-wrap">
+        <h2 class="visually-hidden" id="galeria-titulo">Fotos de nuestros trabajos</h2>
+
+        <div class="galeria-toolbar">
+          <div class="galeria-filtros" role="group" aria-label="Filtrar fotos por categoría">
+            <button class="galeria-chip" type="button" data-filter="todos" aria-pressed="true"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> Todos <span class="galeria-chip__count" aria-hidden="true" data-count>17</span></button>
+            <button class="galeria-chip" type="button" data-filter="navidad" aria-pressed="false"><i class="fa-solid fa-snowflake" aria-hidden="true"></i> Navidad <span class="galeria-chip__count" aria-hidden="true" data-count>10</span></button>
+            <button class="galeria-chip" type="button" data-filter="panques" aria-pressed="false"><i class="fa-solid fa-bread-slice" aria-hidden="true"></i> Panqués <span class="galeria-chip__count" aria-hidden="true" data-count>7</span></button>
+            <button class="galeria-chip" type="button" data-filter="chocolate" aria-pressed="false"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i> Chocolate <span class="galeria-chip__count" aria-hidden="true" data-count>7</span></button>
+            <button class="galeria-chip" type="button" data-filter="regalos" aria-pressed="false"><i class="fa-solid fa-gift" aria-hidden="true"></i> Regalos <span class="galeria-chip__count" aria-hidden="true" data-count>11</span></button>
+          </div>
+          <p class="galeria-status" role="status" aria-live="polite" aria-atomic="true" data-galeria-status>Mostrando las 17 fotos</p>
+        </div>
+
+        <ul class="galeria-grid" role="list" data-galeria-grid>
+          <li class="galeria-item galeria-item--landscape reveal reveal--zoom" data-category="navidad chocolate">
+            <a class="galeria-item__link" href="fotos/bombas-navidad.jpg" data-webp="fotos/bombas-navidad.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/bombas-navidad-600.webp 600w, fotos/bombas-navidad.webp 1024w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/bombas-navidad.jpg" alt="Bombas de chocolate con leche decoradas con nombres escritos a mano" width="1024" height="768" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Bombas de chocolate</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad chocolate regalos">
+            <a class="galeria-item__link" href="fotos/bombas-navidad2.jpg" data-webp="fotos/bombas-navidad2.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/bombas-navidad2-600.webp 600w, fotos/bombas-navidad2.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/bombas-navidad2.jpg" alt="Bombas de chocolate decoradas y empacadas una por una en bolsas transparentes" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Bombas de chocolate</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad chocolate">
+            <a class="galeria-item__link" href="fotos/bombas-navidad3.jpg" data-webp="fotos/bombas-navidad3.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/bombas-navidad3-600.webp 600w, fotos/bombas-navidad3.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/bombas-navidad3.jpg" alt="Bombas de chocolate decoradas con chispas de colores y líneas de chocolate blanco sobre un mantel navideño" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Bombas de chocolate</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="regalos">
+            <a class="galeria-item__link" href="fotos/panque-regalo.jpg" data-webp="fotos/panque-regalo.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panque-regalo-600.webp 600w, fotos/panque-regalo.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panque-regalo.jpg" alt="Pastel redondo para regalo dentro de un domo transparente con etiqueta decorativa" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Pastel para regalo</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad regalos">
+            <a class="galeria-item__link" href="fotos/bunuelos-regalo.jpg" data-webp="fotos/bunuelos-regalo.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/bunuelos-regalo-600.webp 600w, fotos/bunuelos-regalo.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/bunuelos-regalo.jpg" alt="Buñuelos en forma de flor empacados en bolsas individuales con etiqueta" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Buñuelos navideños</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--landscape reveal reveal--zoom" data-category="chocolate">
+            <a class="galeria-item__link" href="fotos/bunuelos.jpg" data-webp="fotos/bunuelos.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/bunuelos-600.webp 600w, fotos/bunuelos.webp 1024w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/bunuelos.jpg" alt="Charola de buñuelos con glaseado blanco, cubiertos de chocolate y dorados con azúcar" width="1024" height="768" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Buñuelos</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--landscape reveal reveal--zoom" data-category="chocolate regalos">
+            <a class="galeria-item__link" href="fotos/fresas.jpg" data-webp="fotos/fresas.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/fresas-600.webp 600w, fotos/fresas.webp 1024w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/fresas.jpg" alt="Fresas cubiertas de chocolate con chispas y nuez en empaques transparentes" width="1024" height="768" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Fresas con chocolate</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad regalos">
+            <a class="galeria-item__link" href="fotos/muffins-navidad.jpg" data-webp="fotos/muffins-navidad.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/muffins-navidad-600.webp 600w, fotos/muffins-navidad.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/muffins-navidad.jpg" alt="Muffins decorados en empaques individuales sobre un mantel navideño" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Regalos individuales</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="panques">
+            <a class="galeria-item__link" href="fotos/panque-naranja2.jpg" data-webp="fotos/panque-naranja2.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panque-naranja2-600.webp 600w, fotos/panque-naranja2.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panque-naranja2.jpg" alt="Panqué de naranja espolvoreado con azúcar glas sobre una tabla de madera" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqué de naranja</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="panques">
+            <a class="galeria-item__link" href="fotos/panques-naranja.jpg" data-webp="fotos/panques-naranja.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panques-naranja-600.webp 600w, fotos/panques-naranja.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panques-naranja.jpg" alt="Panqués individuales de naranja decorados con azúcar glas en forma de estrella, flor y corazón" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqués individuales</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad panques regalos">
+            <a class="galeria-item__link" href="fotos/panques-navidad.jpg" data-webp="fotos/panques-navidad.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panques-navidad-600.webp 600w, fotos/panques-navidad.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panques-navidad.jpg" alt="Panqués envueltos con moños navideños rojos, dorados y de cuadros" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqués navideños</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--landscape reveal reveal--zoom" data-category="navidad panques regalos">
+            <a class="galeria-item__link" href="fotos/panques-navidad2.jpg" data-webp="fotos/panques-navidad2.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panques-navidad2-600.webp 600w, fotos/panques-navidad2.webp 1024w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panques-navidad2.jpg" alt="Panqués en empaque individual adornados con figuras de Santa Claus y muñecos de nieve" width="1024" height="768" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqués con regalo navideño</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad panques regalos">
+            <a class="galeria-item__link" href="fotos/panques-navidad3.jpg" data-webp="fotos/panques-navidad3.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panques-navidad3-600.webp 600w, fotos/panques-navidad3.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panques-navidad3.jpg" alt="Fila de panqués empacados con moño dorado y adornos de cascabeles" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqués con regalo navideño</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="navidad panques regalos">
+            <a class="galeria-item__link" href="fotos/panques-navidad4.jpg" data-webp="fotos/panques-navidad4.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/panques-navidad4-600.webp 600w, fotos/panques-navidad4.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/panques-navidad4.jpg" alt="Panqués con azúcar glas en empaques individuales decorados con moños navideños" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqués con regalo navideño</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait-4x5 reveal reveal--zoom" data-category="navidad chocolate">
+            <a class="galeria-item__link" href="fotos/pretzels-navidad.jpg" data-webp="fotos/pretzels-navidad.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/pretzels-navidad-600.webp 600w, fotos/pretzels-navidad.webp 819w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/pretzels-navidad.jpg" alt="Pretzels cubiertos de chocolate blanco con decoración roja y verde" width="819" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Pretzels navideños</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--portrait reveal reveal--zoom" data-category="panques regalos">
+            <a class="galeria-item__link" href="fotos/regalo-indiv.jpg" data-webp="fotos/regalo-indiv.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/regalo-indiv-600.webp 600w, fotos/regalo-indiv.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/regalo-indiv.jpg" alt="Panqué individual con un corazón de azúcar glas dentro de un domo transparente" width="768" height="1024" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Panqué para regalo</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+          <li class="galeria-item galeria-item--landscape reveal reveal--zoom" data-category="regalos chocolate">
+            <a class="galeria-item__link" href="fotos/regalo1.jpg" data-webp="fotos/regalo1.webp" aria-haspopup="dialog">
+              <picture>
+                <source type="image/webp" srcset="fotos/regalo1-600.webp 600w, fotos/regalo1.webp 1024w" sizes="(min-width: 1264px) 282px, (min-width: 1200px) calc(22.4vw - 4px), (min-width: 768px) calc(30vw - 5px), calc(45.6vw - 8px)">
+                <img class="galeria-item__img" src="fotos/regalo1.jpg" alt="Caja de regalo con panquecito, bomba de chocolate con el mensaje «Feliz día» y fresas con chocolate" width="1024" height="768" loading="lazy" decoding="async">
+              </picture>
+              <span class="galeria-item__caption">Regalos personalizables</span>
+              <span class="galeria-item__zoom" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="galeria-ig reveal" role="group" aria-labelledby="galeria-ig-titulo">
+          <span class="galeria-ig__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+          <div class="galeria-ig__content">
+            <h2 class="galeria-ig__title" id="galeria-ig-titulo">¿Quieres ver más?</h2>
+            <p class="galeria-ig__text">Mira más de nuestros trabajos en Instagram: <span class="galeria-ig__handle">@_dulceetentacioon_</span></p>
+          </div>
+          <a class="btn btn--outline galeria-ig__btn" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> Mira más en Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band cta-band--lila" aria-labelledby="cta-titulo">
+      <div class="container cta-band__inner reveal">
+        <div class="cta-band__content">
+          <p class="eyebrow">Pedidos por WhatsApp</p>
+          <h2 class="cta-band__title" id="cta-titulo">¿Te imaginas algo así para tu <em>evento</em>?</h2>
+          <p class="cta-band__text">Escríbenos por WhatsApp, cuéntanos tu idea y te ayudamos a armar tu pedido.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <a class="brand" href="../index.html">
+            <img class="brand__logo" src="../muffin-112.webp" alt="" width="56" height="56">
+            <span class="brand__name">Dulce Tentación</span>
+          </a>
+          <p class="site-footer__tagline">Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+          <div class="social-links">
+            <a class="social-link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Enlaces rápidos">
+          <h2 class="site-footer__title">Enlaces rápidos</h2>
+          <ul class="site-footer__links" role="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../menu/menu.html">Productos</a></li>
+            <li><a href="../galeria/galeria.html" aria-current="page">Galería</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Contacto</h2>
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><span class="visually-hidden">WhatsApp: </span>55 1296 9555</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+              <a href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener"><span class="visually-hidden">Instagram: </span>@_dulceetentacioon_</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Naucalpan, Estado de México</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Horario</h2>
+          <dl class="hours">
+            <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+            <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+          </dl>
+        </div>
+      </div>
     </div>
-    <footer class="pie-pagina">
-        <div class="footer-container">
-            <div class="footer-section brand">
-                <h2>Dulce Tentacion</h2>
-                <p>Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Enlaces Rápidos</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="menu/menu.html">Productos</a></li>
-                    <li><a href="contacto/contacto.html">Contacto</a></li>
-                    <li><a href="galeria/galeria.html">Galeria</a></li>
-                </ul>
-            </div>
-            <div class="footer-section social">
-                <h3>Síguenos</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <p class="copyright">&copy; 2025 Dulce Tentacion. Todos los derechos reservados.</p>
-            </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Dulce Tentación. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Visor de fotos (lightbox): lo abre galeria.js. Sin JS, cada foto enlaza directamente a la imagen. -->
+  <dialog class="galeria-lightbox" id="galeria-lightbox" aria-labelledby="galeria-lightbox-titulo" data-lightbox>
+    <div class="galeria-lightbox__wrap" data-lb-wrap>
+      <div class="galeria-lightbox__panel">
+        <div class="galeria-lightbox__stage" data-lb-stage>
+          <picture class="galeria-lightbox__picture">
+            <source type="image/webp" srcset="fotos/bombas-navidad.webp" data-lb-source>
+            <img class="galeria-lightbox__img" src="fotos/bombas-navidad.jpg" alt="" width="1024" height="768" loading="lazy" decoding="async" data-lb-img>
+          </picture>
+          <button class="galeria-lightbox__nav galeria-lightbox__nav--prev" type="button" aria-label="Foto anterior" data-lb-prev>
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="galeria-lightbox__nav galeria-lightbox__nav--next" type="button" aria-label="Foto siguiente" data-lb-next>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
         </div>
-    </footer>
 
-    <!-- Insertamos el script de js para las transiciones del carrusel -->
-    <script src=transiciones.js>
+        <div class="galeria-lightbox__info">
+          <div class="galeria-lightbox__meta" aria-live="polite" aria-atomic="true">
+            <h2 class="galeria-lightbox__title" id="galeria-lightbox-titulo" data-lb-title>Foto</h2>
+            <p class="galeria-lightbox__counter"><span class="visually-hidden">Foto </span><span data-lb-index>1</span><span aria-hidden="true"> / </span><span class="visually-hidden"> de </span><span data-lb-total>17</span></p>
+          </div>
+          <a class="btn btn--primary btn--sm galeria-lightbox__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> ¿Te gustó? Pide uno similar
+          </a>
+        </div>
 
-    </script>
+        <button class="galeria-lightbox__close" type="button" aria-label="Cerrar visor de fotos" data-lb-close>
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </dialog>
 
+  <aside class="wa-float-region" aria-label="Pedido rápido por WhatsApp">
+    <a class="wa-float" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+  </aside>
 </body>
-
 </html>

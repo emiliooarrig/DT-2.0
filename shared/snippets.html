@@ -1,0 +1,449 @@
+<!--
+================================================================================
+  DULCE TENTACIÓN — CANONICAL HTML SNIPPETS  (reference file, NOT a page)
+================================================================================
+  Copy these blocks VERBATIM. Only change text marked with «» placeholders.
+  Contract and class docs: shared/README.md
+
+  PATH RULE
+  ---------
+  Every snippet below is written for a ROOT page (index.html).
+  Pages inside a subfolder (menu/, galeria/, contacto/) must prefix EVERY
+  relative path with "../":
+      shared/…            →  ../shared/…
+      muffin.png          →  ../muffin.png
+      index.html          →  ../index.html
+      menu/menu.html      →  ../menu/menu.html
+      galeria/galeria.html→  ../galeria/galeria.html
+      contacto/contacto.html → ../contacto/contacto.html
+  Absolute URLs (https://…) and "#contenido" never change.
+  Ready-made SUBFOLDER versions of (a) head, (b) header and (e) footer are
+  included right after the root versions — use those to avoid mistakes.
+
+  WHATSAPP LINK (primary ordering channel — use this exact href everywhere):
+  https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0
+  (decodes to: "¡Hola Dulce Tentación! Me gustaría hacer un pedido 🍰")
+  INSTAGRAM (secondary): https://www.instagram.com/_dulceetentacioon_/
+  External links always: target="_blank" rel="noopener"
+  NO EMAIL anywhere on the site.
+================================================================================
+-->
+
+
+<!-- ============================================================================
+  (0) PAGE SKELETON — order of landmarks on every page
+============================================================================= -->
+<!DOCTYPE html>
+<html lang="es-MX">
+<!-- (a) head goes here -->
+<body>
+  <!-- (b) skip link + header -->
+  <main id="contenido" tabindex="-1">
+    <!-- (g) page-hero on inner pages, then page sections -->
+    <!-- (c) CTA band, usually the last section -->
+  </main>
+  <!-- (e) footer -->
+  <!-- (d) floating WhatsApp button -->
+</body>
+</html>
+
+
+<!-- ============================================================================
+  (a) <head> — ROOT PAGE (index.html)
+  Page CSS goes AFTER the 3 shared files. Remove old barra.css / footer-estilos.css links.
+============================================================================= -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>«Título de la página» | Dulce Tentación</title>
+  <meta name="description" content="«Descripción de 140–160 caracteres de esta página.»">
+  <meta name="theme-color" content="#ffafcc">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Dulce Tentación">
+  <meta property="og:title" content="«Título de la página» | Dulce Tentación">
+  <meta property="og:description" content="«Misma descripción que arriba.»">
+  <meta property="og:image" content="https://dulce-tentacion.netlify.app/muffin.png">
+  <link rel="icon" type="image/png" href="muffin.png">
+  <link rel="apple-touch-icon" href="muffin.png">
+
+  <!-- Marks JS as available (enables reveal animations). Failsafe: if ui.js never runs, content is shown on load. -->
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('ui-ready'))document.documentElement.classList.remove('js');});</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without blocking the first paint (display=swap shows fallback text meanwhile) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap"></noscript>
+
+  <link rel="stylesheet" href="shared/tokens.css">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="shared/components.css">
+  <link rel="stylesheet" href="main/styles.css"><!-- «page CSS» -->
+
+  <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous" defer></script>
+  <script src="shared/ui.js" defer></script>
+</head>
+
+
+<!-- ============================================================================
+  (a') <head> — SUBFOLDER PAGE (menu/, galeria/, contacto/)
+============================================================================= -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>«Título de la página» | Dulce Tentación</title>
+  <meta name="description" content="«Descripción de 140–160 caracteres de esta página.»">
+  <meta name="theme-color" content="#ffafcc">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Dulce Tentación">
+  <meta property="og:title" content="«Título de la página» | Dulce Tentación">
+  <meta property="og:description" content="«Misma descripción que arriba.»">
+  <meta property="og:image" content="https://dulce-tentacion.netlify.app/muffin.png">
+  <link rel="icon" type="image/png" href="../muffin.png">
+  <link rel="apple-touch-icon" href="../muffin.png">
+
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('ui-ready'))document.documentElement.classList.remove('js');});</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without blocking the first paint (display=swap shows fallback text meanwhile) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap"></noscript>
+
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="«menu.css | galeria.css | contacto.css»">
+
+  <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous" defer></script>
+  <script src="../shared/ui.js" defer></script>
+</head>
+
+
+<!-- ============================================================================
+  (b) SKIP LINK + HEADER / NAV — ROOT PAGE
+  First thing inside <body>. Optional: hard-code aria-current="page" on this
+  page's link (ui.js also sets it automatically).
+============================================================================= -->
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="muffin-112.webp" alt="" width="46" height="46">
+      <span class="brand__name">Dulce Tentación</span>
+    </a>
+
+    <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+      <ul class="site-nav__list" role="list">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Inicio</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="menu/menu.html">Productos</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="galeria/galeria.html">Galería</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="contacto/contacto.html">Contacto</a></li>
+      </ul>
+      <a class="btn btn--primary btn--block site-nav__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+      </a>
+    </nav>
+
+    <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="header-cta__text">Pide por WhatsApp</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Menú" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+
+<!-- ============================================================================
+  (b') SKIP LINK + HEADER / NAV — SUBFOLDER PAGE
+============================================================================= -->
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="../index.html">
+      <img class="brand__logo" src="../muffin-112.webp" alt="" width="46" height="46">
+      <span class="brand__name">Dulce Tentación</span>
+    </a>
+
+    <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+      <ul class="site-nav__list" role="list">
+        <li class="site-nav__item"><a class="site-nav__link" href="../index.html">Inicio</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="../menu/menu.html">Productos</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="../galeria/galeria.html">Galería</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="../contacto/contacto.html">Contacto</a></li>
+      </ul>
+      <a class="btn btn--primary btn--block site-nav__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+      </a>
+    </nav>
+
+    <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="header-cta__text">Pide por WhatsApp</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Menú" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+
+<!-- ============================================================================
+  (c) CTA BAND — usually the last section inside <main>
+  Variants: (none)=rosa · cta-band--rosa-claro · cta-band--alt (rosa muy claro)
+            · cta-band--lila · cta-band--azul · cta-band--azul-claro · cta-band--fucsia
+  Right before the footer prefer --lila / --azul / --alt so it doesn't merge
+  with the rosa footer. Make the id unique if used twice on a page.
+============================================================================= -->
+<section class="cta-band cta-band--lila" aria-labelledby="cta-titulo">
+  <div class="container cta-band__inner reveal">
+    <div class="cta-band__content">
+      <p class="eyebrow">Pedidos por WhatsApp</p>
+      <h2 class="cta-band__title" id="cta-titulo">¿Se te antojó algo?</h2>
+      <p class="cta-band__text">Escríbenos por WhatsApp y te ayudamos a armar tu pedido.</p>
+    </div>
+    <div class="cta-band__actions">
+      <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================================
+  (d) FLOATING WHATSAPP BUTTON — last element inside <body>, every page
+============================================================================= -->
+<aside class="wa-float-region" aria-label="Pedido rápido por WhatsApp">
+  <a class="wa-float" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</aside>
+
+
+<!-- ============================================================================
+  (e) FOOTER — ROOT PAGE
+============================================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__col">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="muffin-112.webp" alt="" width="56" height="56">
+          <span class="brand__name">Dulce Tentación</span>
+        </a>
+        <p class="site-footer__tagline">Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+        <div class="social-links">
+          <a class="social-link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Enlaces rápidos">
+        <h2 class="site-footer__title">Enlaces rápidos</h2>
+        <ul class="site-footer__links" role="list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu/menu.html">Productos</a></li>
+          <li><a href="galeria/galeria.html">Galería</a></li>
+          <li><a href="contacto/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contacto</h2>
+        <ul class="contact-list" role="list">
+          <li>
+            <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+            <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><span class="visually-hidden">WhatsApp: </span>55 1296 9555</a>
+          </li>
+          <li>
+            <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+            <a href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener"><span class="visually-hidden">Instagram: </span>@_dulceetentacioon_</a>
+          </li>
+          <li>
+            <span class="contact-list__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Naucalpan, Estado de México</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Horario</h2>
+        <dl class="hours">
+          <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+          <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Dulce Tentación. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================================
+  (e') FOOTER — SUBFOLDER PAGE
+============================================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__col">
+        <a class="brand" href="../index.html">
+          <img class="brand__logo" src="../muffin-112.webp" alt="" width="56" height="56">
+          <span class="brand__name">Dulce Tentación</span>
+        </a>
+        <p class="site-footer__tagline">Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+        <div class="social-links">
+          <a class="social-link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Enlaces rápidos">
+        <h2 class="site-footer__title">Enlaces rápidos</h2>
+        <ul class="site-footer__links" role="list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../menu/menu.html">Productos</a></li>
+          <li><a href="../galeria/galeria.html">Galería</a></li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Contacto</h2>
+        <ul class="contact-list" role="list">
+          <li>
+            <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+            <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><span class="visually-hidden">WhatsApp: </span>55 1296 9555</a>
+          </li>
+          <li>
+            <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+            <a href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener"><span class="visually-hidden">Instagram: </span>@_dulceetentacioon_</a>
+          </li>
+          <li>
+            <span class="contact-list__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Naucalpan, Estado de México</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Horario</h2>
+        <dl class="hours">
+          <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+          <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Dulce Tentación. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================================
+  (f) FAQ — native <details>; no JS needed. name="faq" (optional) makes it
+  exclusive (opening one closes the others). Wrap in a .section.
+============================================================================= -->
+<div class="faq">
+  <details class="faq__item" name="faq">
+    <summary class="faq__question">«¿Pregunta frecuente?»<span class="faq__icon" aria-hidden="true"></span></summary>
+    <div class="faq__answer">
+      <p>«Respuesta.»</p>
+    </div>
+  </details>
+  <details class="faq__item" name="faq">
+    <summary class="faq__question">«¿Otra pregunta?»<span class="faq__icon" aria-hidden="true"></span></summary>
+    <div class="faq__answer">
+      <p>«Respuesta.»</p>
+    </div>
+  </details>
+</div>
+
+
+<!-- ============================================================================
+  (g) PAGE HERO ("portada") — first child of <main> on inner pages. ONE <h1> per page.
+  Variants: (none)=rosa claro · page-hero--rosa · --alt · --lila · --azul · --azul-claro
+            · page-hero--image (+ style="--hero-image: url('img/foto.jpg')")
+  Optional scalloped bottom edge: add class "scallop-bottom" (not with --image).
+============================================================================= -->
+<section class="page-hero page-hero--azul scallop-bottom">
+  <div class="container page-hero__inner">
+    <p class="eyebrow reveal">«Hecho a mano en Naucalpan»</p>
+    <h1 class="page-hero__title reveal" data-reveal-delay="80">«Nuestros <em>productos</em>»</h1>
+    <p class="page-hero__lead reveal" data-reveal-delay="160">«Texto breve de introducción.»</p>
+  </div>
+</section>
+
+<!-- Photo variant -->
+<section class="page-hero page-hero--image" style="--hero-image: url('img/«foto».jpg')">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">«Galería»</p>
+    <h1 class="page-hero__title">«Título»</h1>
+  </div>
+</section>
+
+
+<!-- ============================================================================
+  (h) BUTTONS — always <a> for navigation/links, <button> for actions.
+  Variants: btn--primary · btn--secondary · btn--outline · btn--light
+  Sizes: btn--sm (44px) · default (48px) · btn--lg (56px)   Layout: btn--block · btn--icon
+============================================================================= -->
+<a class="btn btn--primary" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido
+</a>
+<a class="btn btn--secondary" href="menu/menu.html">Ver productos</a>
+<a class="btn btn--outline" href="galeria/galeria.html">Ver galería <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+<a class="btn btn--light" href="#">«Sobre fondo fucsia o foto»</a>
+<a class="btn btn--primary btn--lg" href="#">«Grande»</a>
+<a class="btn btn--secondary btn--sm" href="#">«Chico»</a>
+<a class="btn btn--outline btn--icon" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+</a>
+
+<!-- Section header pattern -->
+<div class="section-header">
+  <p class="eyebrow">«Lo más pedido»</p>
+  <h2 class="section-title">«Hecho con <em>amor</em>»</h2>
+  <p class="section-lead">«Texto introductorio opcional.»</p>
+</div>
+
+<!-- Card pattern (product) -->
+<article class="card card--hover">
+  <div class="card__media">
+    <img src="img/«foto».jpg" alt="«Descripción del postre»" loading="lazy" width="800" height="600">
+    <span class="badge badge--bestseller card__badge">Más vendido</span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">«Nombre»</h3>
+    <p class="card__text">«Descripción.»</p>
+  </div>
+  <div class="card__footer">«Precios»</div>
+</article>
+
+
+<!-- ============================================================================
+  (i) SCRIPT TAG — already inside the head snippet; listed here for reference.
+============================================================================= -->
+<script src="shared/ui.js" defer></script>        <!-- root page -->
+<script src="../shared/ui.js" defer></script>     <!-- subfolder page -->

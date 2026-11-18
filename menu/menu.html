@@ -1,487 +1,852 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="../barra.css">
-    <link rel="stylesheet" href="../footer-estilos.css">
-    <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous"></script>
-    <title> Menu General</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Menú · Dulce Tentación</title>
+  <meta name="description" content="Menú y precios de Dulce Tentación: panqués, cupcakes, pasteles, chocolates, galletas, fresas cubiertas y más. Haz tu pedido por WhatsApp.">
+  <meta name="theme-color" content="#ffafcc">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Dulce Tentación">
+  <meta property="og:title" content="Menú · Dulce Tentación">
+  <meta property="og:description" content="Menú y precios de Dulce Tentación: panqués, cupcakes, pasteles, chocolates, galletas, fresas cubiertas y más. Haz tu pedido por WhatsApp.">
+  <meta property="og:image" content="https://dulce-tentacion.netlify.app/galeria/fotos/fresas.jpg">
+  <meta property="og:url" content="https://dulce-tentacion.netlify.app/menu/menu.html">
+  <link rel="canonical" href="https://dulce-tentacion.netlify.app/menu/menu.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../muffin.png">
+  <link rel="apple-touch-icon" href="../muffin.png">
+
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('ui-ready'))document.documentElement.classList.remove('js');});</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without blocking the first paint (display=swap shows fallback text meanwhile) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap"></noscript>
+
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="menu.css">
+
+  <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous" defer></script>
+  <script src="../shared/ui.js" defer></script>
+  <script src="menu.js" defer></script>
 </head>
-
 <body>
-    <!-- Barra de navegacion-->
-    <header>
-        <div class="interior">
-            <a href="../index.html" class="logo"> <img src="../muffin.png" alt=""></a>
-            <nav class="navegacion">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul>
-                    <li><a href="../index.html">Inicio </a></li>
-                    <li><a href="../menu/menu.html"> Productos </a></li>
-                    <li><a href="../contacto/contacto.html"> Contacto </a></li>
-                    <li><a href="../galeria/galeria.html"> Galeria </a></li>
-                </ul>
-            </nav>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="../muffin-112.webp" alt="" width="46" height="46">
+        <span class="brand__name">Dulce Tentación</span>
+      </a>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list" role="list">
+          <li class="site-nav__item"><a class="site-nav__link" href="../index.html">Inicio</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../menu/menu.html" aria-current="page">Productos</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../galeria/galeria.html">Galería</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block site-nav__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+        </a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="header-cta__text">Pide por WhatsApp</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Menú" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ================= PORTADA ================= -->
+    <section class="page-hero page-hero--azul-claro scallop-bottom menu-hero">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Menú y precios</p>
+        <h1 class="page-hero__title">Nuestro <em>menú</em></h1>
+        <p class="page-hero__lead">Panqués, cupcakes, pasteles, chocolates y más. Elige tus favoritos y haz tu pedido por WhatsApp.</p>
+        <div class="menu-hero__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido
+          </a>
+          <a class="btn btn--outline btn--lg" href="#como-pedir">¿Cómo pedir?</a>
         </div>
-    </header>
+      </div>
+    </section>
 
+    <!-- ================= BARRA DE CATEGORÍAS (sticky) ================= -->
+    <nav class="menu-cats" aria-label="Categorías" data-menu-cats>
+      <ul class="menu-cats__list" role="list" data-menu-cats-list>
+        <li><a class="menu-cats__chip" href="#panques">Panqués <span class="menu-cats__count" aria-hidden="true">3</span></a></li>
+        <li><a class="menu-cats__chip" href="#cupcakes">Cupcakes <span class="menu-cats__count" aria-hidden="true">5</span></a></li>
+        <li><a class="menu-cats__chip" href="#pasteles">Pasteles <span class="menu-cats__count" aria-hidden="true">3</span></a></li>
+        <li><a class="menu-cats__chip" href="#chocolates">Chocolates <span class="menu-cats__count" aria-hidden="true">6</span></a></li>
+        <li><a class="menu-cats__chip" href="#galletas">Galletas <span class="menu-cats__count" aria-hidden="true">2</span></a></li>
+        <li><a class="menu-cats__chip" href="#adicionales">Adicionales <span class="menu-cats__count" aria-hidden="true">9</span></a></li>
+      </ul>
+    </nav>
 
-    <!-- Fin de la barra de navegacion-->
+    <!-- ================= PANQUÉS ================= -->
+    <section class="menu-category" id="panques" aria-labelledby="panques-titulo">
+      <div class="container">
+        <div class="menu-category__header">
+          <p class="eyebrow">Para el cafecito</p>
+          <div class="menu-category__heading">
+            <h2 class="section-title" id="panques-titulo">Panqués</h2>
+            <span class="menu-category__count">3 productos</span>
+          </div>
+          <p class="menu-category__intro">De naranja, nuez y moras, en distintos tamaños.</p>
+        </div>
 
-    <div class="overlay">
-        <h1 class="titulo-overlay"> Menu general </h1>
+        <div class="menu-grid">
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/panque-naranja.webp">
+                <img src="img/panque-naranja.jpg" width="383" height="238" alt="Panqué de naranja espolvoreado con azúcar glass" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Panqué de naranja</h3>
+              <span class="badge badge--bestseller card__badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Más vendido</span>
+              <p class="card__text">Un delicioso panqué hecho con jugo natural de naranja. Contamos con 3 tamaños disponibles.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Grande</dt><dd>$270</dd></div>
+                <div class="menu-prices__row"><dt>Chico</dt><dd>$220</dd></div>
+                <div class="menu-prices__row"><dt>Rectangular</dt><dd>$170</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/panque-nuez-600.webp 600w, img/panque-nuez-800.webp 800w, img/panque-nuez.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/panque-nuez.jpg" width="1200" height="900" alt="Panqué rectangular de nuez cubierto de nuez picada" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Panqué de nuez</h3>
+              <span class="badge badge--bestseller card__badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Más vendido</span>
+              <p class="card__text">Un delicioso panqué hecho con nuez natural. Contamos con 3 tamaños disponibles.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Grande</dt><dd>$280</dd></div>
+                <div class="menu-prices__row"><dt>Chico</dt><dd>$240</dd></div>
+                <div class="menu-prices__row"><dt>Rectangular</dt><dd>$180</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/moras-panque-600.webp 600w, img/moras-panque-800.webp 800w, img/moras-panque.webp 1160w" sizes="(min-width: 1264px) 558px, (min-width: 1024px) calc(46vw - 31px), (min-width: 480px) calc(69vw - 29px), calc(138vw - 23px)">
+                <img src="img/moras-panque.jpg" width="1160" height="599" alt="Panqué de moras rebanado, con moras en la miga" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Panqué de moras</h3>
+              <p class="card__text">Un delicioso panqué hecho con moras naturales. Contamos con un tamaño disponible.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$165</span> <span class="menu-price__unit">Rectangular</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUPCAKES ================= -->
+    <section class="menu-category" id="cupcakes" aria-labelledby="cupcakes-titulo">
+      <div class="container">
+        <div class="menu-category__header">
+          <p class="eyebrow">Para compartir</p>
+          <div class="menu-category__heading">
+            <h2 class="section-title" id="cupcakes-titulo">Cupcakes</h2>
+            <span class="menu-category__count">5 productos</span>
+          </div>
+          <p class="menu-category__intro">Cupcakes y muffins por paquete de 4 piezas.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/panques-naranja-nuevo-600.webp 600w, img/panques-naranja-nuevo-800.webp 800w, img/panques-naranja-nuevo.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/panques-naranja-nuevo.jpeg" width="1200" height="900" alt="Cupcakes de naranja decorados con figuras de azúcar glass" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cupcake de naranja</h3>
+              <span class="badge badge--bestseller card__badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Más vendido</span>
+              <p class="card__text">Deliciosos cupcakes hechos con jugo de naranja, espolvoreados con azúcar glass. ¡Ideales para compartir en familia!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$100</span> <span class="menu-price__unit">por 4 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/muffin-moras-600.webp 600w, img/muffin-moras-800.webp 800w, img/muffin-moras.webp 910w" sizes="(min-width: 1264px) 438px, (min-width: 1024px) calc(36.1vw - 24px), (min-width: 480px) calc(54.1vw - 23px), calc(108.2vw - 18px)">
+                <img src="img/muffin-moras.jpg" width="910" height="599" alt="Muffins de moras con cubierta crujiente" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Muffin de moras</h3>
+              <p class="card__text">Deliciosos muffins hechos con moras naturales. ¡Ideales para compartir o regalar!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$160</span> <span class="menu-price__unit">por 4 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/cupcake-velvet-600.webp 600w, img/cupcake-velvet-800.webp 800w, img/cupcake-velvet.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/cupcake-velvet.jpeg" width="1200" height="900" alt="Cupcakes de red velvet con betún blanco y decoración roja" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cupcake de red velvet</h3>
+              <p class="card__text">Deliciosos cupcakes de red velvet, acompañados de betún y las decoraciones que gustes. Recomendamos comerlos fríos.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$160</span> <span class="menu-price__unit">por 4 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/cupcake-zanahoria-600.webp 600w, img/cupcake-zanahoria-800.webp 800w, img/cupcake-zanahoria.webp 960w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/cupcake-zanahoria.jpeg" width="960" height="1280" alt="Cupcakes de zanahoria con betún y zanahorias decorativas" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cupcake de zanahoria</h3>
+              <p class="card__text">Deliciosos cupcakes de zanahoria, acompañados de betún con decoraciones en forma de zanahoria.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$150</span> <span class="menu-price__unit">por 4 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/panques-platano-600.webp 600w, img/panques-platano-800.webp 800w, img/panques-platano.webp 960w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/panques-platano.jpeg" width="960" height="1280" alt="Cupcakes de plátano decorados con cristales de azúcar" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cupcake de plátano</h3>
+              <span class="badge badge--bestseller card__badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Más vendido</span>
+              <p class="card__text">Deliciosos cupcakes hechos con plátano natural, decorados con cristales de azúcar. ¡Ideales para compartir!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$150</span> <span class="menu-price__unit">por 4 piezas</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PASTELES ================= -->
+    <section class="menu-category" id="pasteles" aria-labelledby="pasteles-titulo">
+      <div class="container">
+        <div class="menu-category__header">
+          <p class="eyebrow">Para celebrar</p>
+          <div class="menu-category__heading">
+            <h2 class="section-title" id="pasteles-titulo">Pasteles</h2>
+            <span class="menu-category__count">3 productos</span>
+          </div>
+          <p class="menu-category__intro">Pasteles en tres tamaños y opciones individuales para regalar.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/pastel-velvet-600.webp 600w, img/pastel-velvet.webp 633w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/pastel-velvet.jpg" width="633" height="518" alt="Pastel de red velvet decorado con fresas y un mensaje de aniversario" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pastel de red velvet</h3>
+              <p class="card__text">Exquisito pastel de red velvet, ideal para compartir en familia. Se puede acompañar con decoraciones para algún evento especial.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Grande</dt><dd>$320</dd></div>
+                <div class="menu-prices__row"><dt>Chico</dt><dd>$280</dd></div>
+                <div class="menu-prices__row"><dt>Rectangular</dt><dd>$170</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/pastel-zanahoria.webp">
+                <img src="img/pastel-zanahoria.jpg" width="384" height="257" alt="Pastel de zanahoria cubierto de betún con virutas de chocolate" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pastel de zanahoria</h3>
+              <p class="card__text">Exquisito pastel hecho con zanahoria, ideal para compartir en pareja o familia. Acompañado de betún y demás amenidades.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Grande</dt><dd>$320</dd></div>
+                <div class="menu-prices__row"><dt>Chico</dt><dd>$270</dd></div>
+                <div class="menu-prices__row"><dt>Rectangular</dt><dd>$180</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/pastel-indv-600.webp 600w, img/pastel-indv.webp 768w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/pastel-indv.jpg" width="768" height="1024" alt="Pastel individual con un corazón de azúcar glass" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pasteles individuales</h3>
+              <p class="card__text">¡Contamos con opciones individuales! Ideales para regalar en ocasiones especiales. Pueden ser decorados con azúcar glass.</p>
+              <p class="menu-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <span><strong>Nota:</strong> pedido mínimo de 4 unidades.</span></p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Naranja</dt><dd>$55</dd></div>
+                <div class="menu-prices__row"><dt>Zanahoria</dt><dd>$65</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROMO: EVENTOS ================= -->
+    <aside class="menu-promo" aria-labelledby="promo-evento-titulo">
+      <div class="container">
+        <div class="cta-band cta-band--fucsia menu-promo__band reveal">
+          <div class="cta-band__inner">
+            <div class="cta-band__content">
+              <p class="eyebrow">Pedidos personalizados</p>
+              <h2 class="cta-band__title" id="promo-evento-titulo">¿Tienes un evento especial?</h2>
+              <p class="cta-band__text">Personalizamos tu pedido con decoraciones para la ocasión. Cuéntanos qué necesitas.</p>
+            </div>
+            <div class="cta-band__actions">
+              <a class="btn btn--primary" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Cotiza por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================= PRODUCTOS CON CHOCOLATE ================= -->
+    <section class="menu-category" id="chocolates" aria-labelledby="chocolates-titulo">
+      <div class="container">
+        <div class="menu-category__header">
+          <p class="eyebrow">Para regalar</p>
+          <div class="menu-category__heading">
+            <h2 class="section-title" id="chocolates-titulo">Productos con chocolate</h2>
+            <span class="menu-category__count">6 productos</span>
+          </div>
+          <p class="menu-category__intro">Chocolates, bombas, pretzels y más, ideales para regalar o para un evento especial.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/choco-ciruela.nuevo-600.webp 600w, img/choco-ciruela.nuevo-800.webp 800w, img/choco-ciruela.nuevo.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/choco-ciruela.nuevo.jpeg" width="1200" height="900" alt="Ciruelas pasa rellenas de nuez cubiertas de chocolate" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Chocolate de ciruela pasa</h3>
+              <p class="card__text">Deliciosos chocolates de ciruela pasa rellena de nuez. ¡Ideales para un regalo!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$95</span> <span class="menu-price__unit">por 100 g</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/bombas-nuevo-600.webp 600w, img/bombas-nuevo-800.webp 800w, img/bombas-nuevo.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/bombas-nuevo.jpg" width="1200" height="1600" alt="Bombas de chocolate decoradas con chispas de colores y chocolate blanco" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Paquete de bombas de chocolate</h3>
+              <p class="card__text">Deliciosas bombas de chocolate, rellenas de bombones y chocolate Abuelita en polvo. Contamos con diferentes presentaciones.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$140</span> <span class="menu-price__unit">paquete (4 unidades)</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/cerezas-600.webp 600w, img/cerezas-800.webp 800w, img/cerezas.webp 1031w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/cerezas.jpg" width="1031" height="1005" alt="Cerezas cubiertas de chocolate en capacillos rojos" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cerezas con chocolate</h3>
+              <p class="card__text">Deliciosas cerezas cubiertas en chocolate oscuro, semiamargo, blanco o coco.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$55</span> <span class="menu-price__unit">por 10 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/pretzels-600.webp 600w, img/pretzels.webp 767w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/pretzels.jpg" width="767" height="849" alt="Pretzels cubiertos de chocolate decorados como monstruos de colores" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pretzel con chocolate blanco</h3>
+              <p class="card__text">Deliciosos pretzels bañados en chocolate blanco, pueden decorarse para un evento especial.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$70</span> <span class="menu-price__unit">por 20 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/enjambre-choco-600.webp 600w, img/enjambre-choco-800.webp 800w, img/enjambre-choco.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/enjambre-choco.jpeg" width="1200" height="900" alt="Enjambres de chocolate en cajas de regalo" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Enjambre de chocolate</h3>
+              <p class="card__text">Deliciosos enjambres de chocolate, ideales para un evento especial.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Cada uno</dt><dd>$35</dd></div>
+                <div class="menu-prices__row"><dt>Con arándanos o nuez (c/u)</dt><dd>$40</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/cucharas-choco-600.webp 600w, img/cucharas-choco-800.webp 800w, img/cucharas-choco.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/cucharas-choco.jpeg" width="1200" height="900" alt="Cucharas con chocolate Abuelita y bombones" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cucharas con chocolate Abuelita</h3>
+              <p class="card__text">Deliciosas cucharas con chocolate Abuelita, ideales para acompañar con un vaso con leche.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$40</span> <span class="menu-price__unit">c/u</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROMO: REGALOS ================= -->
+    <aside class="menu-promo" aria-labelledby="promo-regalo-titulo">
+      <div class="container">
+        <div class="cta-band cta-band--rosa-claro menu-promo__band reveal">
+          <div class="cta-band__inner">
+            <div class="cta-band__content">
+              <p class="eyebrow">Ideas para regalar</p>
+              <h2 class="cta-band__title" id="promo-regalo-titulo">¿Buscas un regalo?</h2>
+              <p class="cta-band__text">Arma tu paquete con nuestros chocolates y otros postres. Escríbenos y lo armamos juntos.</p>
+            </div>
+            <div class="cta-band__actions">
+              <a class="btn btn--primary" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Escríbenos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================= GALLETAS ================= -->
+    <section class="menu-category" id="galletas" aria-labelledby="galletas-titulo">
+      <div class="container">
+        <div class="menu-category__header">
+          <p class="eyebrow">Para compartir o regalar</p>
+          <div class="menu-category__heading">
+            <h2 class="section-title" id="galletas-titulo">Galletas</h2>
+            <span class="menu-category__count">2 productos</span>
+          </div>
+          <p class="menu-category__intro">Galletas de nuez, incluida una opción con harina de almendra.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/galletas-almendra.webp">
+                <img src="img/galletas-almendra.jpg" width="357" height="475" alt="Galletas de nuez con harina de almendra" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Galletas de nuez con harina de almendra</h3>
+              <p class="card__text">¿Buscas una opción saludable? ¡Esta es la ideal! Son galletas hechas con harina de almendra, acompañadas de nuez. Ideales para quienes buscan una opción fit.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$130</span> <span class="menu-price__unit">por 14 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/besos-nuevo-600.webp 600w, img/besos-nuevo-800.webp 800w, img/besos-nuevo.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/besos-nuevo.jpeg" width="1200" height="900" alt="Besos de nuez cubiertos de azúcar glass" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Besos de nuez con azúcar glass</h3>
+              <p class="card__text">Exquisitos besos de nuez, horneados al momento. Acompañados de azúcar glass espolvoreada. ¡Ideales para compartir o regalar!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$90</span> <span class="menu-price__unit">por 12 piezas</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ADICIONALES ================= -->
+    <section class="menu-category" id="adicionales" aria-labelledby="adicionales-titulo">
+      <div class="container">
+        <div class="menu-category__header">
+          <p class="eyebrow">Y algo más</p>
+          <div class="menu-category__heading">
+            <h2 class="section-title" id="adicionales-titulo">Adicionales</h2>
+            <span class="menu-category__count">9 productos</span>
+          </div>
+          <p class="menu-category__intro">Fresas cubiertas, pays, flan, buñuelos y otros antojos.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/fresas-img-600.webp 600w, img/fresas-img-800.webp 800w, img/fresas-img.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/fresas-img.jpeg" width="1200" height="1600" alt="Fresas cubiertas de chocolate oscuro y blanco" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Fresas cubiertas</h3>
+              <span class="badge badge--bestseller card__badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Más vendido</span>
+              <p class="card__text">Paquete de deliciosas fresas naturales, bañadas en chocolate oscuro y blanco, acompañadas de diferentes amenidades a tu elección.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$220</span> <span class="menu-price__unit">por 12 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/pay-queso.webp">
+                <img src="img/pay-queso.jpg" width="314" height="276" alt="Pay de queso cubierto con mermelada de zarzamora" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pay de queso con zarzamora</h3>
+              <p class="card__text">Exquisito pay de queso acompañado con mermelada de zarzamora. Recomendamos comerlo frío. ¡Ideal para alguna comida o evento social!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Grande</dt><dd>$275</dd></div>
+                <div class="menu-prices__row"><dt>Chico</dt><dd>$170</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/pay-ferrero-600.webp 600w, img/pay-ferrero.webp 828w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/pay-ferrero.jpg" width="828" height="607" alt="Pay de queso con trozos de chocolate Ferrero Rocher" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Pay de queso con chocolate Ferrero</h3>
+              <p class="card__text">Exquisito pay de queso acompañado con trozos de chocolate Ferrero Rocher. Recomendamos comerlo frío. ¡Ideal para regalar!</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <dl class="menu-prices">
+                <div class="menu-prices__row"><dt>Grande</dt><dd>$300</dd></div>
+                <div class="menu-prices__row"><dt>Chico</dt><dd>$190</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/flan.webp">
+                <img src="img/flan.jpg" width="393" height="430" alt="Flan napolitano decorado con nueces y una cereza" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Flan napolitano</h3>
+              <p class="card__text">Delicioso flan hecho con los mejores ingredientes, ideal para compartir en reuniones o en familia. Acompañado de decoración de nueces y cereza.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$180</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/bunuelos-img-600.webp 600w, img/bunuelos-img-800.webp 800w, img/bunuelos-img.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/bunuelos-img.jpeg" width="1200" height="900" alt="Buñuelos cubiertos de azúcar, chocolate blanco y chocolate semiamargo" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Buñuelos</h3>
+              <p class="card__text">Deliciosos buñuelos cubiertos con azúcar, chocolate blanco y chocolate semiamargo.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$280</span> <span class="menu-price__unit">por 24 unidades</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/bunuelos-corazon-600.webp 600w, img/bunuelos-corazon-800.webp 800w, img/bunuelos-corazon.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/bunuelos-corazon.jpg" width="1200" height="900" alt="Buñuelos en forma de corazón cubiertos de chocolate" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Buñuelos de corazón</h3>
+              <p class="card__text">Deliciosos buñuelos en forma de corazón cubiertos con azúcar, chocolate blanco y chocolate semiamargo.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$240</span> <span class="menu-price__unit">por 16 unidades</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="0">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/bunuelos-grandes-600.webp 600w, img/bunuelos-grandes-800.webp 800w, img/bunuelos-grandes.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/bunuelos-grandes.jpeg" width="1200" height="1600" alt="Buñuelos grandes cubiertos de azúcar y chocolate" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Buñuelos grandes</h3>
+              <p class="card__text">Deliciosos buñuelos grandes cubiertos con azúcar, chocolate blanco y chocolate semiamargo.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$90</span> <span class="menu-price__unit">por 4 piezas</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="90">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/manzanas-chamoy-600.webp 600w, img/manzanas-chamoy-800.webp 800w, img/manzanas-chamoy.webp 960w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/manzanas-chamoy.jpeg" width="960" height="1280" alt="Manzanas cubiertas de chamoy y chile" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Manzanas con chamoy</h3>
+              <p class="card__text">Deliciosas manzanas cubiertas con chamoy y chile.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$35</span> <span class="menu-price__unit">c/u</span></p>
+            </div>
+          </article>
+
+          <article class="card card--hover menu-card reveal" data-reveal-delay="180">
+            <div class="card__media">
+              <picture>
+                <source type="image/webp" srcset="img/gelatina-mazapan-600.webp 600w, img/gelatina-mazapan-800.webp 800w, img/gelatina-mazapan.webp 1200w" sizes="(min-width: 1264px) 384px, (min-width: 1024px) calc(31.7vw - 21px), (min-width: 480px) calc(47.5vw - 20px), calc(95vw - 16px)">
+                <img src="img/gelatina-mazapan.jpeg" width="1200" height="900" alt="Gelatina de mazapán en forma de rosca" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Gelatina de mazapán</h3>
+              <p class="card__text">Deliciosa gelatina de mazapán.</p>
+            </div>
+            <div class="card__footer menu-card__footer">
+              <p class="menu-price"><span class="menu-price__amount">$220</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROMO: GALERÍA ================= -->
+    <aside class="menu-promo" aria-labelledby="promo-galeria-titulo">
+      <div class="container">
+        <div class="cta-band cta-band--azul-claro menu-promo__band reveal">
+          <div class="cta-band__inner">
+            <div class="cta-band__content">
+              <p class="eyebrow">Galería</p>
+              <h2 class="cta-band__title" id="promo-galeria-titulo">Mira trabajos anteriores</h2>
+              <p class="cta-band__text">Inspírate con fotos de pedidos que hemos preparado.</p>
+            </div>
+            <div class="cta-band__actions">
+              <a class="btn btn--outline" href="../galeria/galeria.html">Ver galería <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn--outline" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================= CÓMO PEDIR ================= -->
+    <section class="section section--alt menu-steps-section" id="como-pedir" aria-labelledby="como-pedir-titulo">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal">Así de fácil</p>
+          <h2 class="section-title reveal" id="como-pedir-titulo" data-reveal-delay="80">¿Cómo <em>pedir</em>?</h2>
+          <p class="section-lead reveal" data-reveal-delay="160">Todos los pedidos se hacen por WhatsApp.</p>
+        </div>
+        <ol class="menu-steps" role="list" data-reveal-stagger="120">
+          <li class="menu-step reveal">
+            <span class="menu-step__num" aria-hidden="true">1</span>
+            <h3 class="menu-step__title">Elige</h3>
+            <p class="menu-step__text">Revisa el menú y anota tus postres favoritos y sus tamaños.</p>
+          </li>
+          <li class="menu-step reveal">
+            <span class="menu-step__num" aria-hidden="true">2</span>
+            <h3 class="menu-step__title">Escríbenos por WhatsApp</h3>
+            <p class="menu-step__text">Mándanos tu pedido al <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">55 1296 9555</a>.</p>
+          </li>
+          <li class="menu-step reveal">
+            <span class="menu-step__num" aria-hidden="true">3</span>
+            <h3 class="menu-step__title">Coordinamos tu pedido</h3>
+            <p class="menu-step__text">Te confirmamos disponibilidad, detalles y fecha de tu pedido.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="cta-band cta-band--lila" aria-labelledby="cta-titulo">
+      <div class="container cta-band__inner reveal">
+        <div class="cta-band__content">
+          <p class="eyebrow">Pedidos por WhatsApp</p>
+          <h2 class="cta-band__title" id="cta-titulo">¿Se te antojó algo?</h2>
+          <p class="cta-band__text">Escríbenos por WhatsApp y te ayudamos a armar tu pedido.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <a class="brand" href="../index.html">
+            <img class="brand__logo" src="../muffin-112.webp" alt="" width="56" height="56">
+            <span class="brand__name">Dulce Tentación</span>
+          </a>
+          <p class="site-footer__tagline">Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+          <div class="social-links">
+            <a class="social-link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Enlaces rápidos">
+          <h2 class="site-footer__title">Enlaces rápidos</h2>
+          <ul class="site-footer__links" role="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../menu/menu.html">Productos</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Contacto</h2>
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><span class="visually-hidden">WhatsApp: </span>55 1296 9555</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+              <a href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener"><span class="visually-hidden">Instagram: </span>@_dulceetentacioon_</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Naucalpan, Estado de México</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Horario</h2>
+          <dl class="hours">
+            <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+            <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+          </dl>
+        </div>
+      </div>
     </div>
 
-    <!-- Inicio de la seccion de panques-->
-    <h2 class="titulos"> Panques </h2>
-    <div class="seccion panques" id="div-panques">
-
-
-        <div class="Post panque">
-            <h4> Panque de naranja </h4>
-            <div class="div-imagen">
-                <img src="img/panque-naranja.jpg" alt="panque de naranja" class="formatoImagen">
-            </div>
-            <h3 class="mas-vendido"> MAS VENDIDO</h3>
-            <p>
-                Un delicioso panque hecho con jugo natural de Naranja. Contamos con 3 tamaños disponibles.
-            </p>
-            <ol class="listaPrecios">
-                <li>Grande: $270</li>
-                <li>Chico: $220</li>
-                <li> Rectagular: $170</li>
-            </ol>
-        </div>
-
-        <div class="Post">
-            <h4> Panque de nuez </h4>
-            <div class="div-imagen">
-                <img src="img/panque-nuez.jpg" class="formatoImagen">
-            </div>
-            <h3 class="mas-vendido"> MAS VENDIDO</h3>
-            <p>
-                Un delicioso panque hecho con nuez natural. Contamos con 3 tamaños disponibles
-            </p>
-            <ol class="listaPrecios">
-                <li>Grande: $280</li>
-                <li>Chico:$240 </li>
-                <li>Rectangular:$180</li>
-            </ol>
-        </div>
-
-        <div class="Post panque-moras">
-            <h4> Panque de moras </h4>
-            <div class="div-imagen">
-                <img src="img/moras-panque.jpg" class="formatoImagen">
-            </div>
-            <!-- Empty badge placeholder or omit -->
-            <p>
-                Un delicioso panque hecho con moras naturales. Contamos con un tamaño disponible
-            </p>
-
-            <h4 class="precio"> Rectangular: $165</h4>
-        </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Dulce Tentación. Todos los derechos reservados.</p>
+      </div>
     </div>
-    <!-- Fin de la seccion de panques -->
+  </footer>
 
-    <!-- Inicio de la seccion de cupcakes -->
-    <h2 class="titulos"> Cupcakes </h2>
-    <div class="seccion Cupcakes" id="div-cupcakes">
-
-        <div class="Post CupcakeNaranja">
-            <h4> Cupcake de naranja </h4>
-            <div class="div-imagen">
-                <img src="img/panques-naranja-nuevo.jpeg" class="formatoImagen">
-            </div>
-            <h3 class="mas-vendido"> MAS VENDIDO</h3>
-            <p>
-                Deliciosos cupcakes hechos con jugo de naranja, espolvoreados con azucar glass. ¡Ideales para compartir
-                en familia!
-            </p>
-            <h4 class="precio">Precio: 4 x $100</h4>
-        </div>
-
-        <div class="Post MuffinMoras">
-            <h4> Muffin de moras </h4>
-            <div class="div-imagen">
-                <img src="img/muffin-moras.jpg" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos muffins hechos con una moras naturales ¡Ideales para compartir o regalar!
-            </p>
-            <h4 class="precio">Precio: 4 x $160 </h4>
-        </div>
-
-        <div class="Post">
-            <h4> Cupcake de red velvet </h4>
-            <div class="div-imagen">
-                <img src="img/cupcake-velvet.jpeg" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos cupcakes de red velvet, acompañados de betún y las decoraciones que gustes. Recomendamos
-                comerlos fríos.
-            </p>
-            <h4 class="precio"> Precio: 4 x $160</h4>
-        </div>
-
-        <div class="Post">
-            <h4> Cupcake de Zanahoria </h4>
-            <div class="div-imagen">
-                <img src="img/cupcake-zanahoria.jpeg" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos cupcakes de zanahoria, acompañados de betún con decoraciones en forma de zanahoria.
-            </p>
-            <h4 class="precio">Precio: 4 x $150 </h4>
-        </div>
-
-        <div class="Post">
-            <h4> Cupcake de platano </h4>
-            <div class="div-imagen">
-                <img src="img/panques-platano.jpeg" class="formatoImagen">
-            </div>
-            <h3 class="mas-vendido"> MAS VENDIDO</h3>
-            <p>
-                Deliciosos cupcakes hechos con platano natural, decorados con cristales de azucar. ¡Ideales para
-                compartir!
-            </p>
-            <h4 class="precio">Precio: 4 x $150</h4>
-        </div>
-
-    </div>
-    <!-- Fin de la seccion de cupcakes-->
-
-    <h2 class="titulos"> Pasteles </h2>
-    <!-- Inicio de la seccion de pasteles -->
-    <div class="seccion pasteles" id="div-pasteles">
-
-
-        <div class="Post RedVelvet">
-            <h4> Pastel de Red Velvet</h4>
-            <div class="div-imagen">
-                <img src="img/pastel-velvet.jpg" class="formatoImagen">
-            </div>
-            <!-- Omitted badge placeholder if none -->
-            <p>
-                Exquisito pastel de red velvet, ideal para compartir en familia. Se puede acompañar con decoraciones
-                para algun evento especial
-            </p>
-
-            <ol class="listaPrecios">
-                <li>Grande: $320</li>
-                <li>Chico:$280</li>
-                <li>Rectagular:$170</li>
-            </ol>
-        </div>
-
-        <div class="Post Zanahoria">
-            <h4> Pastel de zanahoria </h4>
-            <div class="div-imagen">
-                <img src="img/pastel-zanahoria.jpg" class="formatoImagen">
-            </div>
-            <p>
-                Exquisito pastel hecho con zanahoria, ideal para compartir en pareja o familia. Acompañado de betún y
-                demás amenidades.
-            </p>
-            <ol class="listaPrecios">
-                <li>Grande: $320</li>
-                <li>Chico:$270</li>
-                <li>Rectagular:$180</li>
-            </ol>
-        </div>
-
-        <div class="Post Individual">
-            <h4> Pasteles Individuales </h4>
-            <div class="div-imagen">
-                <img src="img/pastel-indv.jpg" alt="Pastel Individual" class="formatoImagen">
-            </div>
-            <p>
-                ¡Contamos con opciones individuales! Ideales para regalar en ocasiones especiales. Pueden ser
-                decorados con azucar glass.
-            </p>
-            <h5> NOTA: PEDIDO MINIMO DE 4 UNIDADES</h5>
-            <ol class="listaPrecios">
-                <li>Naranja: $55</li>
-                <li>Zanahoria: $65</li>
-            </ol>
-        </div>
-
-    </div>
-    <!-- Fin de la seccion de pasteles -->
-
-    <!-- Inicio de la seccion de chocolates-->
-    <h2 class="titulos"> Productos con chocolate </h2>
-    <div class="seccion Chocolates" id="div-chocolates">
-        <div class="Post">
-            <h4> Chocolate de Ciruela Pasa </h4>
-            <div class="div-imagen">
-                <img src="img/choco-ciruela.nuevo.jpeg" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos chocolates de ciruela pasa rellena de nuez ¡Ideales para un regalo!
-            </p>
-            <h4 class="precio"> Precio: 100gr x $95</h4>
-        </div>
-
-        <div class="Post bombas">
-            <h4> Paquete de bombas de chocolate </h4>
-            <!-- Removed (4 unidades) from h4 to keep clean, can be in p -->
-            <div class="div-imagen">
-                <img src="img/bombas-nuevo.jpg" alt="Bombas de chocolate!" class="formatoImagen">
-            </div>
-            <p>
-                (4 unidades) Deliciosas bombas de chocolate, rellenas de bombones y chocolate abuelita en polvo.
-                Contamos con
-                diferentes presentaciones.
-            </p>
-
-            <h4 class="precio"> Precio: $140</h4>
-
-        </div>
-
-        <div class="Post Cerezas">
-            <h4> Cerezas con chocolate </h4>
-            <div class="div-imagen">
-                <img src="img/cerezas.jpg" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosas cerezas cubiertas en chocolate obscuro, semi amargo, blanco o coco.
-            </p>
-            <h4 class="precio">Precio:10 x $55</h4>
-        </div>
-
-        <!-- Merged pretzels here as product with chocolate -->
-        <div class="Post Pretzel">
-            <h4> Pretzel con chocolate blanco </h4>
-            <div class="div-imagen">
-                <img src="img/pretzels.jpg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos pretzels bañados en chocolate blanco, pueden decorarse para un evento especial.
-            </p>
-            <h4 class="precio">Precio: 20 x $70</h4>
-        </div>
-
-        <div class="Post">
-            <h4> Enjambre de chocolate </h4>
-            <div class="div-imagen">
-                <img src="img/enjambre-choco.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos enjambres de chocolate, ideales para un evento especial.
-            </p>
-            <h4 class="precio">Precio: $35 c/u</h4>
-            <h4 class="precio">Precio: $40 c/u con arandanos o nuez </h4>
-        </div>
-
-        <div class="Post">
-            <h4> Cucharas con chocolate abuelita </h4>
-            <div class="div-imagen">
-                <img src="img/cucharas-choco.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosas cucharas con chocolate abuelita, ideales para acompañar con un vaso con leche.
-            </p>
-            <h4 class="precio">Precio: $40 c/u</h4>
-        </div>
-
-    </div>
-    <!-- Fin de la seccion de chocolates -->
-
-    <!-- Inicio de la seccion de galletas -->
-
-    <h2 class="titulos"> Galletas </h2>
-    <div class="seccion Galletas" id="div-galletas">
-
-
-        <div class="Post Almendra">
-            <h4> Galletas de nuez con harina de almendra </h4>
-            <div class="div-imagen">
-                <img src="img/galletas-almendra.jpg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                ¿Buscas una opción saludable? ¡Esta es la ideal! Son galletas hechas con harina de almendra, acompañadas
-                de nuez. Ideales para quienes buscan una opcion fit.
-            </p>
-            <h4 class="precio"> Precio: 14 x $130 </h4>
-        </div>
-
-        <div class="Post BesosGalleta">
-            <h4> Besos de nuez con azucar glass </h4>
-            <div class="div-imagen">
-                <img src="img/besos-nuevo.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Exquisitos besos de nuez, horneados al momento. Acompañados de azucar glass espolvoreada. ¡Ideales para
-                compartir o regalar!
-            </p>
-            <h4 class="precio">Precio: 12 x $90</h4>
-
-        </div>
-
-
-    </div>
-    <!-- Inicio de la seccion de otros -->
-    <h2 class="titulos"> Adicionales </h2>
-    <div class="seccion otros 1" id="div-otros">
-
-        <div class="Post fresas">
-            <h4> Fresas cubiertas</h4>
-            <div class="div-imagen">
-                <img src="img/fresas-img.jpeg" alt="" class="formatoImagen">
-            </div>
-            <h3 class="mas-vendido"> MAS VENDIDO</h3>
-            <p>
-                Paquete de deliciosas fresas naturales, bañadas en chocolate obscuro y blanco, acompañadas de diferentes
-                amenidades a tu eleccion.
-            </p>
-            <h4 class="precio"> Precio: 12 x $220</h4>
-        </div>
-
-        <div class="Post Pay">
-            <h4> Pay de queso con zarzamora</h4>
-            <div class="div-imagen">
-                <img src="img/pay-queso.jpg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Exquisito pay de queso acompañado con mermelada de zarzamora. Recomendamos comerlo frío. ¡Ideal para
-                alguna comida o evento social!
-            </p>
-
-            <ol class="listaPrecios">
-                <li>Grande: $275</li>
-                <li>Chico:$170 </li>
-            </ol>
-        </div>
-
-        <div class="Post">
-            <h4> Pay de queso con chocolate Ferrero</h4>
-            <div class="div-imagen">
-                <img src="img/pay-ferrero.jpg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Exquisito pay de queso acompañado con trozos de chocolate Ferrero Rocher. Recomendamos comerlo frío.
-                ¡Ideal para regalar!
-            </p>
-
-            <ol class="listaPrecios">
-                <li>Grande: $300</li>
-                <li>Chico:$190 </li>
-            </ol>
-        </div>
-
-        <div class="Post Flan">
-            <h4> Flan napolitano </h4>
-            <div class="div-imagen">
-                <img src="img/flan.jpg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Delicioso flan hecho con los mejores ingredientes, ideal para compartir en reuniones o en familia.
-                Acompañado de decoracion de nueces y cereza.
-            </p>
-            <h4 class="precio">Precio: $180</h4>
-        </div>
-
-        <!-- Merged stray sections -->
-        <div class="Post">
-            <h4> Buñuelos </h4>
-            <div class="div-imagen">
-                <img src="img/bunuelos-img.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos buñuelos cubiertos con azucar, chocolate blanco y chocolate semi amargo
-            </p>
-            <h4 class="precio"> Precio: $280 (24 unidades)</h4>
-        </div>
-
-        <div class="Post">
-            <h4> Buñuelos de corazón </h4>
-            <div class="div-imagen">
-                <img src="img/bunuelos-corazon.jpg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos buñuelos en forma de corazón cubiertos con azucar, chocolate blanco y chocolate semi amargo
-            </p>
-            <h4 class="precio"> Precio: $240 (16 unidades) </h4>
-        </div>
-
-        <div class="Post">
-            <h4> Buñuelos grandes </h4>
-            <div class="div-imagen">
-                <img src="img/bunuelos-grandes.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosos buñuelos grandes cubiertos con azucar, chocolate blanco y chocolate semi amargo
-            </p>
-            <h4 class="precio"> Precio: $90 x 4 pzas </h4>
-        </div>
-
-        <div class="Post">
-            <h4> Manzanas con chamoy </h4>
-            <div class="div-imagen">
-                <img src="img/manzanas-chamoy.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosas manzanas cubiertas con chamoy y chile
-            </p>
-            <h4 class="precio"> Precio: $35 c/u </h4>
-        </div>
-
-        <div class="Post">
-            <h4> Gelatina de Mazapan </h4>
-            <div class="div-imagen">
-                <img src="img/gelatina-mazapan.jpeg" alt="" class="formatoImagen">
-            </div>
-            <p>
-                Deliciosa gelatina de mazapan
-            </p>
-            <h4 class="precio"> Precio: $220 </h4>
-        </div>
-
-    </div>
-
-    </div>
-
-    <!-- Fin de la secccion de otros-->
-
-    <footer class="pie-pagina">
-        <div class="footer-container">
-            <div class="footer-section brand">
-                <h2>Dulce Tentacion</h2>
-                <p>Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Enlaces Rápidos</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="menu/menu.html">Productos</a></li>
-                    <li><a href="contacto/contacto.html">Contacto</a></li>
-                    <li><a href="galeria/galeria.html">Galeria</a></li>
-                </ul>
-            </div>
-            <div class="footer-section social">
-                <h3>Síguenos</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <p class="copyright">&copy; 2025 Dulce Tentacion. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- SCRIPT DE LAS ANIMACIONES PARA MEJOR VENDIDO.-->
-    <script src="transicion.js">
-    </script>
+  <aside class="wa-float-region" aria-label="Pedido rápido por WhatsApp">
+    <a class="wa-float" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+  </aside>
 </body>
-
 </html>

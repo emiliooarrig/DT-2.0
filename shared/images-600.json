@@ -1,0 +1,347 @@
+[
+ {
+  "variant": "menu/img/besos-nuevo-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/besos-nuez-600.webp",
+  "width": 600,
+  "height": 573
+ },
+ {
+  "variant": "menu/img/bombas-nuevo-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/bombas1-600.webp",
+  "width": 448,
+  "height": 204
+ },
+ {
+  "variant": "menu/img/bombas2-600.webp",
+  "width": 600,
+  "height": 661
+ },
+ {
+  "variant": "menu/img/borrego-manzana-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/borrego-manzana2jpg-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/brownie-600.webp",
+  "width": 600,
+  "height": 670
+ },
+ {
+  "variant": "menu/img/brownie-corazon-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/bunuelos-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/bunuelos-corazon-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/bunuelos-grandes-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/bunuelos-img-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/cerezas-600.webp",
+  "width": 600,
+  "height": 585
+ },
+ {
+  "variant": "menu/img/choco-ciruela.nuevo-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/chocolate-ciruela-600.webp",
+  "width": 391,
+  "height": 369
+ },
+ {
+  "variant": "menu/img/cucharas-choco-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/cupcake-velvet-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/cupcake-zanahoria-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/enjambre-choco-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/flan-600.webp",
+  "width": 393,
+  "height": 430
+ },
+ {
+  "variant": "menu/img/fresas-chocolate-600.webp",
+  "width": 600,
+  "height": 367
+ },
+ {
+  "variant": "menu/img/fresas-cubiertas-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/fresas-img-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/fresas-nuevo-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/galletas-almendra-600.webp",
+  "width": 357,
+  "height": 475
+ },
+ {
+  "variant": "menu/img/galletas-chocolate-600.webp",
+  "width": 384,
+  "height": 512
+ },
+ {
+  "variant": "menu/img/galletas-nuez-600.webp",
+  "width": 397,
+  "height": 507
+ },
+ {
+  "variant": "menu/img/gelatina-mazapan-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/manzanas-chamoy-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/mini-donas-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/mini-donas2-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/moras-panque-600.webp",
+  "width": 600,
+  "height": 310
+ },
+ {
+  "variant": "menu/img/muffin-moras-600.webp",
+  "width": 600,
+  "height": 395
+ },
+ {
+  "variant": "menu/img/muffin-naranja-600.webp",
+  "width": 369,
+  "height": 261
+ },
+ {
+  "variant": "menu/img/muffin-velvet-600.webp",
+  "width": 350,
+  "height": 254
+ },
+ {
+  "variant": "menu/img/muffin-zanahoria-600.webp",
+  "width": 368,
+  "height": 254
+ },
+ {
+  "variant": "menu/img/panque-naranja-600.webp",
+  "width": 383,
+  "height": 238
+ },
+ {
+  "variant": "menu/img/panque-nuez-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/panque-zanahoria-600.webp",
+  "width": 464,
+  "height": 272
+ },
+ {
+  "variant": "menu/img/panques-naranja-nuevo-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "menu/img/panques-platano-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/pastel-indv-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/pastel-velvet-600.webp",
+  "width": 600,
+  "height": 491
+ },
+ {
+  "variant": "menu/img/pastel-zanahoria-600.webp",
+  "width": 384,
+  "height": 257
+ },
+ {
+  "variant": "menu/img/pay-datiles-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/pay-datiles-bota-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/pay-datiles-esfera-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "menu/img/pay-ferrero-600.webp",
+  "width": 600,
+  "height": 440
+ },
+ {
+  "variant": "menu/img/pay-queso-600.webp",
+  "width": 314,
+  "height": 276
+ },
+ {
+  "variant": "menu/img/pretzels-600.webp",
+  "width": 600,
+  "height": 664
+ },
+ {
+  "variant": "menu/img/tarro-chocolate-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/bombas-navidad-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "galeria/fotos/bombas-navidad2-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/bombas-navidad3-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/bunuelos-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "galeria/fotos/bunuelos-regalo-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/fresas-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "galeria/fotos/muffins-navidad-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/panque-naranja2-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/panque-regalo-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/panques-naranja-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/panques-navidad-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/panques-navidad2-600.webp",
+  "width": 600,
+  "height": 450
+ },
+ {
+  "variant": "galeria/fotos/panques-navidad3-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/panques-navidad4-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/pretzels-navidad-600.webp",
+  "width": 600,
+  "height": 750
+ },
+ {
+  "variant": "galeria/fotos/regalo-indiv-600.webp",
+  "width": 600,
+  "height": 800
+ },
+ {
+  "variant": "galeria/fotos/regalo1-600.webp",
+  "width": 600,
+  "height": 450
+ }
+]

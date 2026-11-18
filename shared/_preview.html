@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Guía de estilo | Dulce Tentación</title>
+  <meta name="description" content="Guía de estilo interna del sistema de diseño de Dulce Tentación (no es una página pública).">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffafcc">
+  <link rel="icon" type="image/png" href="../muffin.png">
+
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('ui-ready'))document.documentElement.classList.remove('js');});</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap">
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <style>
+    /* preview-only helpers */
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--space-3); }
+    .swatch { border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); font-size: var(--fs-sm); background: var(--color-surface); }
+    .swatch__chip { height: 64px; }
+    .swatch__label { padding: var(--space-2) var(--space-3); }
+    .type-sample > * + * { margin-top: var(--space-3); }
+  </style>
+
+  <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous" defer></script>
+  <script src="ui.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="../muffin-112.webp" alt="" width="46" height="46">
+        <span class="brand__name">Dulce Tentación</span>
+      </a>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list" role="list">
+          <li class="site-nav__item"><a class="site-nav__link" href="../index.html">Inicio</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../menu/menu.html" aria-current="page">Productos</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../galeria/galeria.html">Galería</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block site-nav__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+        </a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="header-cta__text">Pide por WhatsApp</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Menú" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="page-hero page-hero--azul scallop-bottom">
+      <div class="container page-hero__inner">
+        <p class="eyebrow reveal">Sistema de diseño</p>
+        <h1 class="page-hero__title reveal" data-reveal-delay="80">Guía de <em>estilo</em></h1>
+        <p class="page-hero__lead reveal" data-reveal-delay="160">Todos los componentes compartidos en un solo lugar. Página interna, no enlazada desde el sitio.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Tokens</p>
+          <h2 class="section-title">Paleta <em>bloqueada</em></h2>
+          <p class="section-lead">Sólo estos colores. Texto sobre rosas, lilas y azules siempre #333 o más oscuro.</p>
+        </div>
+        <div class="swatches" data-reveal-stagger="40">
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-rosa)"></div><div class="swatch__label">rosa</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-rosa-claro)"></div><div class="swatch__label">rosa-claro</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-rosa-muy-claro)"></div><div class="swatch__label">rosa-muy-claro</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-rosa-medio)"></div><div class="swatch__label">rosa-medio</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-hot-pink)"></div><div class="swatch__label">hot-pink</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-fucsia)"></div><div class="swatch__label">fucsia</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-fucsia-oscuro)"></div><div class="swatch__label">fucsia-oscuro</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-rosa-oscuro)"></div><div class="swatch__label">rosa-oscuro</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-lila)"></div><div class="swatch__label">lila</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-azul-claro)"></div><div class="swatch__label">azul-claro</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-azul)"></div><div class="swatch__label">azul</div></div>
+          <div class="swatch reveal reveal--zoom"><div class="swatch__chip" style="background:var(--color-amarillo)"></div><div class="swatch__label">amarillo</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split">
+        <div class="type-sample reveal reveal--left">
+          <p class="eyebrow">Tipografía</p>
+          <p class="display">Dulce <em>tentación</em></p>
+          <h1>H1 Fraunces suave</h1>
+          <h2>H2 Momentos dulces</h2>
+          <h3>H3 Recuerdos inolvidables</h3>
+          <h4>H4 Repostería artesanal</h4>
+        </div>
+        <div class="type-sample reveal reveal--right">
+          <p class="lead">Texto principal en DM Sans. Explora nuestra exquisita colección de repostería artesanal, hecha con amor y los mejores ingredientes.</p>
+          <p>Párrafo normal con un <a href="#contenido">enlace de ejemplo</a>. <span class="text-muted">Texto atenuado (#666) sólo sobre fondos blancos o rosa muy claro.</span></p>
+          <div class="ornament"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+          <div class="cluster">
+            <span class="badge badge--bestseller">Más vendido</span>
+            <span class="badge badge--new">Nuevo</span>
+            <span class="badge badge--rosa">Temporada</span>
+            <span class="badge badge--azul">Sin nuez</span>
+            <span class="badge badge--soft">Por pedido</span>
+            <span class="badge badge--fucsia">Edición especial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Botones</p>
+          <h2 class="section-title">Llamadas a la acción</h2>
+        </div>
+        <div class="cluster cluster--center">
+          <a class="btn btn--primary" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido</a>
+          <a class="btn btn--secondary" href="../menu/menu.html">Ver productos</a>
+          <a class="btn btn--outline" href="../galeria/galeria.html">Ver galería <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn--primary btn--lg" href="#contenido">Grande</a>
+          <a class="btn btn--secondary btn--sm" href="#contenido">Chico</a>
+          <a class="btn btn--outline btn--icon" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <button class="btn btn--primary" type="button" disabled>Deshabilitado</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Tarjetas</p>
+          <h2 class="section-title">Productos y <em>contacto</em></h2>
+        </div>
+        <div class="grid grid--3" data-reveal-stagger="100">
+          <article class="card card--hover reveal">
+            <div class="card__media">
+              <img src="../menu/img/brownie.webp" alt="Brownie de chocolate cortado en cuadros" loading="lazy" width="800" height="600">
+              <span class="badge badge--bestseller card__badge">Más vendido</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Brownie</h3>
+              <p class="card__text">Chocolate intenso con textura húmeda y costra crujiente.</p>
+            </div>
+            <div class="card__footer">Desde $«precio»</div>
+          </article>
+          <article class="card card--hover reveal">
+            <div class="card__media">
+              <img src="../menu/img/bunuelos-corazon.webp" alt="Buñuelos en forma de corazón" loading="lazy" width="800" height="600">
+              <span class="badge badge--new card__badge">Nuevo</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Buñuelos de corazón</h3>
+              <p class="card__text">Crujientes, espolvoreados con azúcar y canela.</p>
+            </div>
+            <div class="card__footer">Desde $«precio»</div>
+          </article>
+          <article class="card card--center card--accent reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <h3 class="card__title">Ubicación</h3>
+              <p class="card__text">Naucalpan, Estado de México</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Preguntas frecuentes</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">¿Cómo hago un pedido?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer"><p>Escríbenos por WhatsApp al 55 1296 9555 y te ayudamos a armar tu pedido.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">¿Dónde se encuentran?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer"><p>En Naucalpan, Estado de México.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">¿Cuál es su horario?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer"><p>Lun – Vie 9:00 – 20:00, Sáb – Dom 10:00 – 18:00.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-rosa">
+      <div class="container cta-band__inner reveal">
+        <div class="cta-band__content">
+          <p class="eyebrow">Variante rosa (default)</p>
+          <h2 class="cta-band__title" id="cta-rosa">¿Se te antojó algo?</h2>
+          <p class="cta-band__text">Escríbenos por WhatsApp y te ayudamos a armar tu pedido.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band cta-band--fucsia" aria-labelledby="cta-fucsia">
+      <div class="container cta-band__inner reveal reveal--zoom">
+        <div class="cta-band__content">
+          <p class="eyebrow">Variante fucsia</p>
+          <h2 class="cta-band__title" id="cta-fucsia">Pedidos para <em>eventos</em></h2>
+          <p class="cta-band__text">Los botones primarios se vuelven blancos automáticamente.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band cta-band--lila" aria-labelledby="cta-lila">
+      <div class="container cta-band__inner reveal">
+        <div class="cta-band__content">
+          <p class="eyebrow">Variante lila (recomendada antes del footer)</p>
+          <h2 class="cta-band__title" id="cta-lila">¿Se te antojó algo?</h2>
+          <p class="cta-band__text">Escríbenos por WhatsApp y te ayudamos a armar tu pedido.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <a class="brand" href="../index.html">
+            <img class="brand__logo" src="../muffin-112.webp" alt="" width="56" height="56">
+            <span class="brand__name">Dulce Tentación</span>
+          </a>
+          <p class="site-footer__tagline">Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+          <div class="social-links">
+            <a class="social-link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Enlaces rápidos">
+          <h2 class="site-footer__title">Enlaces rápidos</h2>
+          <ul class="site-footer__links" role="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../menu/menu.html">Productos</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Contacto</h2>
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><span class="visually-hidden">WhatsApp: </span>55 1296 9555</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+              <a href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener"><span class="visually-hidden">Instagram: </span>@_dulceetentacioon_</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Naucalpan, Estado de México</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Horario</h2>
+          <dl class="hours">
+            <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+            <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Dulce Tentación. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+</html>

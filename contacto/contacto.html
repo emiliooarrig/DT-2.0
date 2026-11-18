@@ -1,113 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contacto.css">
-    <link rel="stylesheet" href="../barra.css">
-    <link rel="stylesheet" href="../footer-estilos.css">
-    <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous"></script>
-    <title> ¿Como contactarnos?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contacto · Dulce Tentación</title>
+  <meta name="description" content="Haz tu pedido de postres por WhatsApp al 55 1296 9555. Síguenos en Instagram. Dulce Tentación, repostería en Naucalpan, Estado de México.">
+  <meta name="theme-color" content="#ffafcc">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Dulce Tentación">
+  <meta property="og:title" content="Contacto · Dulce Tentación">
+  <meta property="og:description" content="Haz tu pedido de postres por WhatsApp al 55 1296 9555. Síguenos en Instagram. Dulce Tentación, repostería en Naucalpan, Estado de México.">
+  <meta property="og:image" content="https://dulce-tentacion.netlify.app/galeria/fotos/fresas.jpg">
+  <meta property="og:url" content="https://dulce-tentacion.netlify.app/contacto/contacto.html">
+  <link rel="canonical" href="https://dulce-tentacion.netlify.app/contacto/contacto.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../muffin.png">
+  <link rel="apple-touch-icon" href="../muffin.png">
+
+  <script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('ui-ready'))document.documentElement.classList.remove('js');});</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without blocking the first paint (display=swap shows fallback text meanwhile) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,100,0..1;1,9..144,400..700,100,0..1&display=swap"></noscript>
+
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="contacto.css">
+
+  <script src="https://kit.fontawesome.com/07dd29a84b.js" crossorigin="anonymous" defer></script>
+  <script src="../shared/ui.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <div class="interior">
-            <a href="../index.html" class="logo"> <img src="../muffin.png" alt=""></a>
-            <nav class="navegacion">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul>
-                    <li><a href="../index.html">Inicio </a></li>
-                    <li><a href="../menu/menu.html"> Productos </a></li>
-                    <li><a href="../contacto/contacto.html"> Contacto </a></li>
-                    <li><a href="../galeria/galeria.html"> Galeria </a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="../muffin-112.webp" alt="" width="46" height="46">
+        <span class="brand__name">Dulce Tentación</span>
+      </a>
 
-    <div class="overlay">
-        <h1 class="titulo-overlay"> ¿Como nos puedes contactar?</h1>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list" role="list">
+          <li class="site-nav__item"><a class="site-nav__link" href="../index.html">Inicio</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../menu/menu.html">Productos</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../galeria/galeria.html">Galería</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="../contacto/contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block site-nav__cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+        </a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="header-cta__text">Pide por WhatsApp</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Menú" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="page-hero page-hero--azul-claro scallop-bottom contacto-hero">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Contacto</p>
+        <h1 class="page-hero__title">Hablemos de tu <em>pedido</em></h1>
+        <p class="page-hero__lead">Todos nuestros pedidos se hacen por WhatsApp: escríbenos y coordinamos contigo los detalles de tu entrega.</p>
+        <div class="contacto-hero__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pide por WhatsApp
+          </a>
+          <a class="btn btn--outline btn--lg" href="../menu/menu.html">Ver productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CANALES DE CONTACTO ============ -->
+    <section class="section contacto-canales" aria-label="Canales de contacto">
+      <div class="container">
+        <div class="contacto-grid" data-reveal-stagger="100">
+
+          <!-- WhatsApp (principal) -->
+          <article class="contacto-wa reveal" aria-labelledby="wa-titulo">
+            <div class="contacto-wa__inner">
+              <div class="contacto-wa__content">
+                <span class="contacto-wa__badge"><i class="fa-solid fa-star" aria-hidden="true"></i> Canal principal</span>
+                <span class="contacto-wa__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                <h2 class="contacto-wa__title" id="wa-titulo">Haz tu pedido por <em>WhatsApp</em></h2>
+                <p class="contacto-wa__text">Nuestro medio de contacto principal: haz tu pedido directamente y coordina los detalles para la entrega.</p>
+                <p class="contacto-wa__number">
+                  <span class="contacto-wa__number-label">WhatsApp</span>
+                  <span class="contacto-wa__number-value">55 1296 9555</span>
+                </p>
+                <a class="btn btn--primary btn--lg contacto-wa__btn" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Enviar mensaje
+                </a>
+              </div>
+
+              <figure class="contacto-chat">
+                <div class="contacto-chat__phone">
+                  <div class="contacto-chat__bar" aria-hidden="true">
+                    <img class="contacto-chat__avatar" src="../muffin.png" alt="" width="36" height="36" loading="lazy">
+                    <span class="contacto-chat__who">
+                      <span class="contacto-chat__name">Dulce Tentación</span>
+                      <span class="contacto-chat__status">WhatsApp</span>
+                    </span>
+                  </div>
+                  <div class="contacto-chat__body">
+                    <p class="contacto-chat__bubble contacto-chat__bubble--out">
+                      <span class="visually-hidden">Mensaje sugerido: </span>¡Hola Dulce Tentación! Me gustaría hacer un pedido 🍰
+                      <span class="contacto-chat__meta" aria-hidden="true">✓✓</span>
+                    </p>
+                    <p class="contacto-chat__bubble contacto-chat__bubble--typing" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                    </p>
+                  </div>
+                </div>
+                <figcaption class="contacto-chat__caption">
+                  <i class="fa-regular fa-comment-dots" aria-hidden="true"></i> Tu mensaje ya va escrito: solo tócale enviar.
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Instagram (secundario) -->
+          <article class="contacto-card contacto-card--ig reveal" aria-labelledby="ig-titulo">
+            <span class="contacto-card__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+            <div class="contacto-card__body">
+              <h2 class="contacto-card__title" id="ig-titulo">Síguenos en Instagram</h2>
+              <p class="contacto-card__handle">@_dulceetentacioon_</p>
+              <p class="contacto-card__text">Aquí encontrarás avisos, posts, historias y todo lo relacionado con nuestra marca.</p>
+              <a class="btn btn--outline contacto-card__btn" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i> Visitar perfil
+              </a>
+            </div>
+          </article>
+
+          <!-- Ubicación -->
+          <article class="contacto-card contacto-card--info reveal" aria-labelledby="ubicacion-titulo">
+            <span class="contacto-card__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="contacto-card__body">
+              <h2 class="contacto-card__title" id="ubicacion-titulo">Ubicación</h2>
+              <p class="contacto-card__text contacto-card__text--strong">Naucalpan, Edo. Méx.</p>
+              <p class="contacto-card__text">Coordinamos la entrega de tu pedido por WhatsApp.</p>
+            </div>
+          </article>
+
+          <!-- Horario -->
+          <article class="contacto-card contacto-card--info reveal" aria-labelledby="horario-titulo">
+            <span class="contacto-card__icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+            <div class="contacto-card__body">
+              <h2 class="contacto-card__title" id="horario-titulo">Horario</h2>
+              <dl class="hours contacto-hours">
+                <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+                <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO PEDIR ============ -->
+    <section class="section section--alt contacto-pasos-section" aria-labelledby="pasos-titulo">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Fácil y rápido</p>
+          <h2 class="section-title" id="pasos-titulo">¿Cómo <em>pedir</em>?</h2>
+          <p class="section-lead">Tres pasos y tu antojo está en camino.</p>
+        </div>
+
+        <ol class="contacto-pasos" role="list" data-reveal-stagger="120">
+          <li class="contacto-paso reveal">
+            <span class="contacto-paso__num" aria-hidden="true">1</span>
+            <span class="contacto-paso__icon" aria-hidden="true"><i class="fa-solid fa-cake-candles"></i></span>
+            <h3 class="contacto-paso__title">Elige tu postre</h3>
+            <p class="contacto-paso__text">Revisa nuestros productos y escoge lo que se te antoje.</p>
+            <a class="contacto-paso__link" href="../menu/menu.html">Ver productos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="contacto-paso reveal">
+            <span class="contacto-paso__num" aria-hidden="true">2</span>
+            <span class="contacto-paso__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+            <h3 class="contacto-paso__title">Escríbenos por WhatsApp</h3>
+            <p class="contacto-paso__text">Mándanos un mensaje al 55&nbsp;1296&nbsp;9555 con lo que quieres pedir.</p>
+            <a class="contacto-paso__link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">Abrir WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="contacto-paso reveal">
+            <span class="contacto-paso__num" aria-hidden="true">3</span>
+            <span class="contacto-paso__icon" aria-hidden="true"><i class="fa-solid fa-gift"></i></span>
+            <h3 class="contacto-paso__title">Coordinamos tu pedido</h3>
+            <p class="contacto-paso__text">Acordamos contigo los detalles de tu pedido y de la entrega.</p>
+          </li>
+        </ol>
+
+        <div class="contacto-faq reveal" role="group" aria-labelledby="faq-titulo">
+          <span class="contacto-faq__icon" aria-hidden="true"><i class="fa-regular fa-circle-question"></i></span>
+          <div class="contacto-faq__content">
+            <h2 class="contacto-faq__title" id="faq-titulo">¿Tienes dudas?</h2>
+            <p class="contacto-faq__text">Revisa nuestras preguntas frecuentes antes de hacer tu pedido.</p>
+          </div>
+          <a class="btn btn--outline contacto-faq__btn" href="../index.html#faq">Ver preguntas frecuentes <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ANTOJOS (FOTOS) ============ -->
+    <section class="section contacto-antojos" aria-labelledby="antojos-titulo">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Para abrir el apetito</p>
+          <h2 class="section-title" id="antojos-titulo">Un vistazo a nuestros <em>postres</em></h2>
+        </div>
+
+        <ul class="contacto-fotos" role="list" data-reveal-stagger="90">
+          <li class="contacto-foto reveal reveal--zoom">
+            <picture>
+              <source type="image/webp" srcset="../galeria/fotos/fresas-600.webp 600w, ../galeria/fotos/fresas.webp 1024w" sizes="(min-width: 1264px) 376px, (min-width: 768px) calc(31.7vw - 29px), calc(63.3vw - 19px)">
+              <img src="../galeria/fotos/fresas.jpg" alt="Fresas cubiertas de chocolate con chispas de colores, nuez y coco" width="1024" height="768" loading="lazy" decoding="async">
+            </picture>
+          </li>
+          <li class="contacto-foto reveal reveal--zoom">
+            <picture>
+              <source type="image/webp" srcset="../galeria/fotos/panques-naranja-600.webp 600w, ../galeria/fotos/panques-naranja.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 768px) calc(23.8vw - 22px), calc(47.5vw - 14px)">
+              <img src="../galeria/fotos/panques-naranja.jpg" alt="Panqués de naranja con azúcar glass decorada en forma de flores y corazones" width="768" height="1024" loading="lazy" decoding="async">
+            </picture>
+          </li>
+          <li class="contacto-foto reveal reveal--zoom">
+            <picture>
+              <source type="image/webp" srcset="../galeria/fotos/bunuelos-600.webp 600w, ../galeria/fotos/bunuelos.webp 1024w" sizes="(min-width: 1264px) 376px, (min-width: 768px) calc(31.7vw - 29px), calc(63.3vw - 19px)">
+              <img src="../galeria/fotos/bunuelos.jpg" alt="Buñuelos bañados en chocolate blanco, chocolate oscuro y azúcar con canela" width="1024" height="768" loading="lazy" decoding="async">
+            </picture>
+          </li>
+          <li class="contacto-foto reveal reveal--zoom">
+            <picture>
+              <source type="image/webp" srcset="../galeria/fotos/panque-regalo-600.webp 600w, ../galeria/fotos/panque-regalo.webp 768w" sizes="(min-width: 1264px) 282px, (min-width: 768px) calc(23.8vw - 22px), calc(47.5vw - 14px)">
+              <img src="../galeria/fotos/panque-regalo.jpg" alt="Pastel redondo para regalo en domo transparente con etiqueta de Dulce Tentación" width="768" height="1024" loading="lazy" decoding="async">
+            </picture>
+          </li>
+        </ul>
+
+        <div class="contacto-antojos__actions reveal">
+          <a class="btn btn--outline" href="../galeria/galeria.html">Ver galería <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="btn btn--secondary" href="../menu/menu.html">Ver productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta-band cta-band--lila" aria-labelledby="cta-titulo">
+      <div class="container cta-band__inner reveal">
+        <div class="cta-band__content">
+          <p class="eyebrow">Pedidos por WhatsApp</p>
+          <h2 class="cta-band__title" id="cta-titulo">¿Se te antojó algo?</h2>
+          <p class="cta-band__text">Escríbenos por WhatsApp y te ayudamos a armar tu pedido.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Haz tu pedido
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__col">
+          <a class="brand" href="../index.html">
+            <img class="brand__logo" src="../muffin-112.webp" alt="" width="56" height="56">
+            <span class="brand__name">Dulce Tentación</span>
+          </a>
+          <p class="site-footer__tagline">Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
+          <div class="social-links">
+            <a class="social-link" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Enlaces rápidos">
+          <h2 class="site-footer__title">Enlaces rápidos</h2>
+          <ul class="site-footer__links" role="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../menu/menu.html">Productos</a></li>
+            <li><a href="../galeria/galeria.html">Galería</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Contacto</h2>
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              <a href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener"><span class="visually-hidden">WhatsApp: </span>55 1296 9555</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+              <a href="https://www.instagram.com/_dulceetentacioon_/" target="_blank" rel="noopener"><span class="visually-hidden">Instagram: </span>@_dulceetentacioon_</a>
+            </li>
+            <li>
+              <span class="contact-list__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Naucalpan, Estado de México</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Horario</h2>
+          <dl class="hours">
+            <div class="hours__row"><dt>Lun – Vie</dt><dd>9:00 – 20:00</dd></div>
+            <div class="hours__row"><dt>Sáb – Dom</dt><dd>10:00 – 18:00</dd></div>
+          </dl>
+        </div>
+      </div>
     </div>
 
-    <!--  Inicio de la seccion de contacto -->
-    <!--  Inicio de la seccion de contacto -->
-    <div class="contact-section">
-        <div class="contact-container">
-
-            <!-- Instagram Card -->
-            <div class="contact-card">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>
-                    Esta es nuestra red social principal, aquí encontrarás avisos, posts, historias y todo lo
-                    relacionado con nuestra marca.
-                </p>
-                <div class="contenedor-boton">
-                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="btn-contact">Visitar Perfil</a>
-                </div>
-            </div>
-
-            <!-- Email Card -->
-            <div class="contact-card">
-                <i class="fa-regular fa-envelope"></i>
-                <h3>Email</h3>
-                <p>
-                    Contamos con nuestro email, aquí también puedes hacer pedidos cuando lo desees y coodinarnos para la
-                    entrega del mismo.
-                </p>
-                <div class="contenedor-boton">
-                    <a href="mailto:dulceetentacioon.contacto@gmail.com" class="btn-contact">Enviar Correo</a>
-                </div>
-            </div>
-
-            <!-- WhatsApp Card -->
-            <div class="contact-card">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>WhatsApp</h3>
-                <p>
-                    Este es nuestro medio de contacto principal, haz tu pedido directamente y coordina los detalles para
-                    la entrega.
-                </p>
-                <div class="contenedor-boton">
-                    <a href="https://wa.me/5512969555" class="btn-contact">Enviar Mensaje</a>
-                </div>
-            </div>
-
-        </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span data-year>2026</span> Dulce Tentación. Todos los derechos reservados.</p>
+      </div>
     </div>
+  </footer>
 
-    <footer class="pie-pagina">
-        <div class="footer-container">
-            <div class="footer-section brand">
-                <h2>Dulce Tentacion</h2>
-                <p>Elaboramos los mejores postres con amor y dedicación. ¡Haz tu vida más dulce!</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Enlaces Rápidos</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="menu/menu.html">Productos</a></li>
-                    <li><a href="contacto/contacto.html">Contacto</a></li>
-                    <li><a href="galeria/galeria.html">Galeria</a></li>
-                </ul>
-            </div>
-            <div class="footer-section social">
-                <h3>Síguenos</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/_dulceetentacioon_/" class="instagram"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/5512969555" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <p class="copyright">&copy; 2025 Dulce Tentacion. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+  <aside class="wa-float-region" aria-label="Pedido rápido por WhatsApp">
+    <a class="wa-float" href="https://wa.me/525512969555?text=%C2%A1Hola%20Dulce%20Tentaci%C3%B3n!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20%F0%9F%8D%B0" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+  </aside>
 </body>
-
 </html>

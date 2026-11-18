@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Dulce Tentación — Design tokens
+   --------------------------------------------------------------------------
+   Load order in every page <head>:
+     1. shared/tokens.css   (this file — variables only, no selectors besides :root)
+     2. shared/base.css
+     3. shared/components.css
+     4. the page's own CSS
+   PALETTE IS LOCKED. Never write a raw hex outside this file; use the tokens.
+   Breakpoints (cannot be custom properties — use these literal values,
+   always mobile-first with min-width):
+     --bp-sm  480px   @media (min-width: 480px)
+     --bp-md  768px   @media (min-width: 768px)
+     --bp-lg  1024px  @media (min-width: 1024px)
+   ========================================================================== */
+
+:root {
+  /* ---------- 1. Raw palette (by color name) ---------- */
+  --color-rosa:            #ffafcc; /* header, footer, CTA band */
+  --color-rosa-claro:      #ffc8dd;
+  --color-rosa-muy-claro:  #ffe4e1;
+  --color-rosa-medio:      #ffb6c1;
+  --color-hot-pink:        #ff69b4; /* icons / borders / decoration ONLY — never behind text */
+  --color-fucsia:          #E91E63; /* decoration only: 4.3:1 with white = fails AA for body text */
+  --color-fucsia-oscuro:   #C2185B; /* primary CTA bg (white text 5.9:1) */
+  --color-rosa-oscuro:     #d14d94; /* decoration only */
+  --color-lila:            #cdb4db;
+  --color-azul-claro:      #bde0fe;
+  --color-azul:            #a2d2ff;
+  --color-amarillo:        #ffce00; /* "Más vendido" badge, dark text on it */
+
+  --color-negro:           #000000;
+  --color-gris-900:        #333333;
+  --color-gris-800:        #4a4a4a;
+  --color-gris-700:        #555555;
+  --color-gris-600:        #666666;
+  --color-gris-200:        #eeeeee;
+  --color-gris-150:        #f0f0f0;
+  --color-gris-100:        #f9f9f9;
+  --color-gris-50:         #fafafa;
+  --color-blanco:          #ffffff;
+
+  /* ---------- 2. Semantic colors ---------- */
+  --color-bg:              var(--color-blanco);
+  --color-bg-alt:          var(--color-rosa-muy-claro); /* alternate section bg */
+  --color-bg-soft:         var(--color-gris-100);
+  --color-surface:         var(--color-blanco);         /* cards */
+  --color-surface-muted:   var(--color-gris-50);        /* card footers, price areas */
+
+  --color-text:            var(--color-gris-900);       /* default text, OK on every tint */
+  --color-text-strong:     var(--color-negro);
+  --color-text-muted:      var(--color-gris-600);       /* ONLY on white / #f9f9f9 / rosa-muy-claro */
+  --color-text-inverse:    var(--color-blanco);         /* ONLY on fucsia-oscuro or dark image overlay */
+  --color-heading:         var(--color-gris-900);
+
+  --color-accent:          var(--color-fucsia-oscuro);  /* accent text (large text on tints) */
+  --color-accent-deco:     var(--color-hot-pink);       /* decorative icons/lines, never text */
+  --color-link:            var(--color-fucsia-oscuro);
+  --color-link-hover:      var(--color-negro);
+
+  --color-cta:             var(--color-fucsia-oscuro);
+  --color-cta-text:        var(--color-blanco);
+  /* Deviation (contrast): #E91E63 + white text = 4.3:1 (< 4.5), so the hover
+     keeps the same background and changes elevation + ring instead. */
+  --color-cta-hover:       var(--color-fucsia-oscuro);
+  --color-cta-ring:        rgba(194, 24, 91, 0.28);     /* fucsia-oscuro @ 28% */
+
+  --color-border:          var(--color-gris-200);
+  --color-border-soft:     rgba(0, 0, 0, 0.06);
+  --color-focus:           var(--color-fucsia-oscuro);
+
+  --color-header-bg:       var(--color-rosa);
+  --color-footer-bg:       var(--color-rosa);
+  --color-drawer-bg:       var(--color-rosa-muy-claro);
+  --color-backdrop:        rgba(0, 0, 0, 0.35);
+  --color-overlay-image:   rgba(0, 0, 0, 0.55);         /* photo overlay behind white text */
+
+  --color-badge-bestseller: var(--color-amarillo);
+  --color-badge-new:        var(--color-lila);
+
+  /* ---------- 3. Typography ---------- */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Fraunces variable axes: SOFT 0..100 (rounded terminals), WONK 0..1 (quirky italics) */
+  --fraunces-soft: 100;
+  --fraunces-wonk: 0;
+
+  /* Fluid type scale (320px → 1200px viewport) */
+  --fs-xs:      clamp(0.78rem, 0.76rem + 0.1vw, 0.83rem);    /* 12.5 → 13.3px */
+  --fs-sm:      clamp(0.875rem, 0.85rem + 0.12vw, 0.94rem);  /* 14 → 15px */
+  --fs-base:    clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);    /* 16 → 17px */
+  --fs-md:      clamp(1.125rem, 1.08rem + 0.22vw, 1.25rem);  /* 18 → 20px */
+  --fs-lg:      clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);     /* 20 → 24px */
+  --fs-xl:      clamp(1.5rem, 1.32rem + 0.9vw, 2rem);        /* 24 → 32px */
+  --fs-2xl:     clamp(1.875rem, 1.55rem + 1.6vw, 2.75rem);   /* 30 → 44px */
+  --fs-3xl:     clamp(2.25rem, 1.75rem + 2.5vw, 3.5rem);     /* 36 → 56px */
+  --fs-display: clamp(2.6rem, 1.9rem + 3.6vw, 4.75rem);      /* 42 → 74px */
+
+  --lh-tight: 1.1;
+  --lh-snug:  1.25;
+  --lh-base:  1.65;
+
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  --tracking-tight: -0.015em;
+  --tracking-wide:  0.08em;
+
+  /* ---------- 4. Spacing ---------- */
+  --space-1:  0.25rem;  /*  4px */
+  --space-2:  0.5rem;   /*  8px */
+  --space-3:  0.75rem;  /* 12px */
+  --space-4:  1rem;     /* 16px */
+  --space-5:  1.5rem;   /* 24px */
+  --space-6:  2rem;     /* 32px */
+  --space-7:  2.5rem;   /* 40px */
+  --space-8:  3rem;     /* 48px */
+  --space-9:  4rem;     /* 64px */
+  --space-10: 5rem;     /* 80px */
+
+  --section-space:    clamp(3.5rem, 2.5rem + 5vw, 6.5rem);  /* vertical padding of .section */
+  --section-space-sm: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+  --gutter:           clamp(1rem, 0.5rem + 2.5vw, 2rem);    /* container side padding (min 16px) */
+
+  /* ---------- 5. Layout ---------- */
+  --container-max:    1200px;
+  --container-narrow: 800px;
+  --measure:          65ch;
+  --header-h:          76px;
+  --header-h-scrolled: 62px;
+  --tap-min:           44px; /* minimum touch target */
+
+  /* ---------- 6. Shape ---------- */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-pill: 999px;
+  --scallop-r:   12px; /* radius of the scalloped "doily" edge bumps */
+
+  /* ---------- 7. Elevation (soft, warm) ---------- */
+  --shadow-xs:     0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md:     0 10px 25px rgba(0, 0, 0, 0.07), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-lg:     0 18px 40px rgba(0, 0, 0, 0.11), 0 4px 10px rgba(0, 0, 0, 0.05);
+  --shadow-cta:    0 10px 24px rgba(194, 24, 91, 0.30);
+  --shadow-header: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  /* ---------- 8. Motion ---------- */
+  --dur-fast:   150ms;
+  --dur-base:   250ms;
+  --dur-slow:   400ms;
+  --dur-reveal: 700ms;
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --reveal-distance: 24px;
+
+  /* ---------- 9. Focus ---------- */
+  --focus-width:  3px;
+  --focus-offset: 3px;
+
+  /* ---------- 10. Stacking ---------- */
+  --z-base:   1;
+  --z-float:  90;   /* floating WhatsApp button */
+  --z-header: 100;  /* header + mobile drawer */
+  --z-skip:   1000; /* skip link */
+}
